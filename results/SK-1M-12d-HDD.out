@@ -1,0 +1,58 @@
+Loading python/3.11.6--gcc--8.5.0
+  Loading requirement: bzip2/1.0.8-gp5wcz5 libmd/1.0.4-wja3f5q
+    libbsd/0.11.7-cgxjopl expat/2.5.0-bptl3xw ncurses/6.4-asx3jea
+    readline/8.2-nyw6mp6 gdbm/1.23-fs6otck libiconv/1.17-d7yvx2s
+    xz/5.4.1-hubmwr5 zlib-ng/2.1.4-6htiapk libxml2/2.10.3-5eeeokp
+    pigz/2.7-bopr5vp zstd/1.5.5-gawytfl tar/1.34-amqus5s gettext/0.22.3-2g7elif
+    libffi/3.4.4-6r7brdq libxcrypt/4.4.35-ss2rzin sqlite/3.43.2
+    util-linux-uuid/2.38.1-jkdi7kv
+=========================================
+Starting NON-DETERMINISTIC HDD FULL execution (build + merge in memory)
+Starting execution at: Tue Jan 20 23:52:01 CET 2026
+=========================================
+PREPARE SET TO false.
+SHARDS SET TO 3.
+N SET TO 1000000.
+Data path: ../data/vectors
+Total vecs num: 1000000
+Shards num: 3
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 333333
+Vecs num. of last shard: 333334
+There is no active ID.
+-> 1000000
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Iniciou?GPU 2 is activated
+GPU 1 is activated
+GPU 0 is activated
+Building No. 0
+Building No. 1
+Building No. 2
+End building No.0 in 0.492941 seconds
+End building No.1 in 0.499954 seconds
+End building No.2 in 0.479029 seconds
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 23041206548160 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 0.557728
+Write KNN graph costs: 0.091616
+Merge costs: J = 2 I = 0 0.4795
+Write KNN graph costs: 0.09139
+Iniciando o último merge
+Shard 1 foi ativado e ira comecar
+END para 1 -> 140730523271072 
+
+Shard 1 foi read e ira comecar
+Merge costs: J = 2 I = 1 0.560668
+Write KNN graph costs: 0.093063
+Time cost = 13.083330 
+=========================================
+Execution finished at: Tue Jan 20 23:52:20 CET 2026
+Total time elapsed: 0 minutes 19 seconds
+=========================================
