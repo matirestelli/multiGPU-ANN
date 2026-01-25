@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/NNDescent-Deterministic-No-HDD/random_offset_tracker.cpp
+atomic
+-
+
+/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/NNDescent-Deterministic-No-HDD/xmuknn.cpp
+xmuknn.h
+/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/NNDescent-Deterministic-No-HDD/xmuknn.h
+
+/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/NNDescent-Deterministic-No-HDD/xmuknn.h
+ctime
+-
+list
+-
+random
+-
+string
+-
+vector
+-
+
