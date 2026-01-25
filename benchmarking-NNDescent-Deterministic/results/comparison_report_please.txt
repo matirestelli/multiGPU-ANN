@@ -1,0 +1,7 @@
+===== KNN COMPARISON SUMMARY =====
+DIFFERENT POINTS: 0 out of 10000
+Different Point IDs: 
+Average Jaccard Distance: 0.0000
+Average Common Neighbors: 12.00 / 12
+
+===== DETAILED DIFFERENCES =====
