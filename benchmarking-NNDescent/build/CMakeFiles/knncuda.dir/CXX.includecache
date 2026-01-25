@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/benchmarking-NNDescent-IO/xmuknn.cpp
+xmuknn.h
+/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/benchmarking-NNDescent-IO/xmuknn.h
+
+/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/benchmarking-NNDescent-IO/xmuknn.h
+ctime
+-
+list
+-
+random
+-
+string
+-
+vector
+-
+
