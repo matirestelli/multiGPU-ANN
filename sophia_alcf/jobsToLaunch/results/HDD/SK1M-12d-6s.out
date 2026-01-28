@@ -1,0 +1,99 @@
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ Cray MPICH loaded successfully
+Environment setup complete!
+=========================================
+Starting NON-DETERMINISTIC HDD FULL execution (build + merge with HDD storage)
+Starting execution at: Wed Jan 28 06:56:44 PM UTC 2026
+=========================================
+PREPARE SET TO false.
+SHARDS SET TO 6.
+N SET TO 1000000.
+Data path: ../data/vectors
+Total vecs num: 1000000
+Shards num: 6
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 166666
+Vecs num. of last shard: 166670
+There is no active ID.
+-> 1000000
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Iniciou?GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 1
+Building No. 0
+Building No. 2
+End building No.0 in 0.229883 seconds
+End building No.1 in 0.232622 seconds
+End building No.2 in 0.247407 seconds
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 3
+Building No. 5
+Building No. 4
+End building No.3 in 0.17434 seconds
+End building No.4 in 0.18093 seconds
+End building No.5 in 0.19281 seconds
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 22524791838496 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 0.840064
+Write KNN graph costs: 0.090325
+Merge costs: J = 2 I = 0 0.835254
+Write KNN graph costs: 0.093195
+Merge costs: J = 3 I = 0 0.781365
+Shard 1 foi ativado e ira comecar
+END para 1 -> 22523903883040 
+
+Shard 1 foi read e ira comecar
+Write KNN graph costs: 0.094504
+Merge costs: J = 2 I = 1 0.83039
+Merge costs: J = 4 I = 0 0.771816
+Write KNN graph costs: 0.124392
+Write KNN graph costs: 0.123596
+Merge costs: J = 3 I = 1 0.753028
+Write KNN graph costs: 0.092171
+Merge costs: J = 5 I = 0 0.922643
+Write KNN graph costs: 0.093038
+Merge costs: J = 4 I = 1 0.705826
+Shard 2 foi ativado e ira comecar
+END para 2 -> 22523909986080 
+
+Shard 2 foi read e ira comecar
+Write KNN graph costs: 0.095973
+Merge costs: J = 3 I = 2 0.812141
+Merge costs: J = 5 I = 1 0.834597
+Write KNN graph costs: 0.094507
+Write KNN graph costs: 0.090532
+Merge costs: J = 4 I = 2 0.743125
+Write KNN graph costs: 0.094481
+Merge costs: J = 5 I = 2 0.87172
+Write KNN graph costs: 0.093234
+Shard 3 foi ativado e ira comecar
+END para 3 -> 22523909986080 
+
+Shard 3 foi read e ira comecar
+Merge costs: J = 4 I = 3 0.797197
+Write KNN graph costs: 0.091895
+Merge costs: J = 5 I = 3 0.841936
+Write KNN graph costs: 0.092219
+Iniciando o último merge
+Shard 4 foi ativado e ira comecar
+END para 4 -> 140729850091904 
+
+Shard 4 foi read e ira comecar
+Merge costs: J = 5 I = 4 0.891593
+Write KNN graph costs: 0.090941
+Time cost = 23.053600 
+=========================================
+Execution finished at: Wed Jan 28 06:57:18 PM UTC 2026
+Total time elapsed: 0 minutes 34 seconds
+=========================================

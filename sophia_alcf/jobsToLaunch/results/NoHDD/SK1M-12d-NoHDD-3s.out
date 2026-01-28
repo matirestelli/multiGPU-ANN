@@ -1,0 +1,73 @@
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ OpenMPI loaded successfully
+Environment setup complete!
+=========================================
+Starting NON-DETERMINISTIC NO-HDD FULL execution (build + merge in memory)
+Starting execution at: Sun Jan 25 05:58:23 PM UTC 2026
+=========================================
+SHARDS SET TO 3.
+N SET TO 1000000.
+MODE SET TO full.
+Setting up db_size = 1000000
+GPU 0: db_size = 1000000
+GPU 1: db_size = 1000000
+GPU 2: db_size = 1000000
+Loading data from: ../data/vectors.fvecs
+Loading all vector data into memory (parallel mode)...
+Loading shard 0: position=0, count=333333
+Loading shard 1: position=333333, count=333333
+Loading shard 2: position=666666, count=333334
+Successfully loaded shard 0
+Successfully loaded shard 1
+Successfully loaded shard 2
+All vector data loaded successfully (parallel)
+Successfully loaded 1000000 vectors of dimension 12 into 3 shards
+Data path: ../data/vectors
+Total vecs num: 1000000
+Shards num: 3
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 333333
+Vecs num. of last shard: 333334
+Vector data loaded for 3 shards
+Local KNN graphs stored for 0 shards
+Global KNN graphs stored for 0 shards
+-> 1000000
+Iniciou?GPU 0 is activated
+GPU 2 is activated
+GPU 1 is activated
+Building No. 0
+Building No. 2
+Building No. 1
+End building No.0 in 1.33641 seconds
+Stored local KNN graph for shard 0
+Stored global KNN graph for shard 0
+End building No.1 in 1.60918 seconds
+Stored local KNN graph for shard 1
+Stored global KNN graph for shard 1
+End building No.2 in 1.83915 seconds
+Stored local KNN graph for shard 2
+Stored global KNN graph for shard 2
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 23320734959696 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 2.94889
+Merge costs: J = 2 I = 0 3.20898
+All merges completed in main loop - skipping final merge
+Writing final merged KNN graphs to disk...
+Writing all global KNN graphs to file: ../results/NNDescent-KNNG.kgraph
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Writing shard 0 to position 0 with 333333 vectors
+Writing shard 1 to position 333333 with 333333 vectors
+Writing shard 2 to position 666666 with 333334 vectors
+Successfully wrote all global KNN graphs to file
+Final merged graphs written to: ../results/NNDescent-KNNG.kgraph
+Time cost = 12.065498 
+=========================================
+Execution finished at: Sun Jan 25 05:58:48 PM UTC 2026
+Total time elapsed: 0 minutes 25 seconds
+=========================================

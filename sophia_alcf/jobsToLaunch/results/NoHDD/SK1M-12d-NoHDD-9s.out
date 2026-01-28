@@ -1,0 +1,187 @@
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ Cray MPICH loaded successfully
+Installing matplotlib and pandas...
+⚠ Note: Could not install matplotlib/pandas (network may be unavailable)
+Installing cmake...
+⚠ Note: Could not install cmake
+Environment setup complete!
+=========================================
+Starting NON-DETERMINISTIC NO-HDD FULL execution (build + merge in memory)
+Starting execution at: Wed Jan 28 09:35:48 AM UTC 2026
+=========================================
+SHARDS SET TO 9.
+N SET TO 1000000.
+MODE SET TO full.
+Setting up db_size = 1000000
+GPU 0: db_size = 1000000
+GPU 1: db_size = 1000000
+GPU 2: db_size = 1000000
+Loading data from: ../data/vectors.fvecs
+Loading all vector data into memory (parallel mode)...
+Loading shard 0: position=0, count=111111
+Loading shard 1: position=111111, count=111111
+Loading shard 2: position=222222, count=111111
+Loading shard 3: position=333333, count=111111
+Loading shard 4: position=444444, count=111111
+Loading shard 5: position=555555, count=111111
+Loading shard 6: position=666666, count=111111
+Loading shard 7: position=777777, count=111111
+Loading shard 8: position=888888, count=111112
+Successfully loaded shard 8
+Successfully loaded shard 7
+Successfully loaded shard 6
+Successfully loaded shard 5
+Successfully loaded shard 4
+Successfully loaded shard 3
+Successfully loaded shard 2
+Successfully loaded shard 1
+Successfully loaded shard 0
+All vector data loaded successfully (parallel)
+Successfully loaded 1000000 vectors of dimension 12 into 9 shards
+Data path: ../data/vectors
+Total vecs num: 1000000
+Shards num: 9
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 111111
+Vecs num. of last shard: 111112
+Vector data loaded for 9 shards
+Local KNN graphs stored for 0 shards
+Global KNN graphs stored for 0 shards
+-> 1000000
+Iniciou?GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 0
+Building No. 1
+Building No. 2
+End building No.1 in 0.190772 seconds
+End building No.0 in 0.200911 seconds
+End building No.2 in 0.203577 seconds
+Stored local KNN graph for shard 1
+Stored global KNN graph for shard 1
+Stored local KNN graph for shard 0
+Stored global KNN graph for shard 0
+Stored local KNN graph for shard 2
+Stored global KNN graph for shard 2
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 3
+Building No. 4
+Building No. 5
+End building No.4 in 0.147409 seconds
+End building No.3 in 0.153356 seconds
+Stored local KNN graph for shard 4
+Stored global KNN graph for shard 4
+Stored local KNN graph for shard 3
+Stored global KNN graph for shard 3
+End building No.5 in 0.169593 seconds
+Stored local KNN graph for shard 5
+Stored global KNN graph for shard 5
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 8
+Building No. 6
+Building No. 7
+End building No.8 in 0.145816 seconds
+End building No.7 in 0.147876 seconds
+Stored local KNN graph for shard 8
+Stored global KNN graph for shard 8
+End building No.6 in 0.162111 seconds
+Stored local KNN graph for shard 7
+Stored global KNN graph for shard 7
+Stored local KNN graph for shard 6
+Stored global KNN graph for shard 6
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 22407922014304 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 0.598575
+Merge costs: J = 2 I = 0 0.63464
+Merge costs: J = 3 I = 0 0.602186
+Shard 1 foi ativado e ira comecar
+END para 1 -> 22404624308320 
+
+Shard 1 foi read e ira comecar
+Merge costs: J = 4 I = 0 0.584432
+Merge costs: J = 2 I = 1 0.556906
+Merge costs: J = 5 I = 0 0.605155
+Merge costs: J = 3 I = 1 0.526882
+Merge costs: J = 4 I = 1 0.528989
+Merge costs: J = 6 I = 0 0.560744
+Shard 2 foi ativado e ira comecar
+END para 2 -> 22404622207072 
+
+Shard 2 foi read e ira comecar
+Merge costs: J = 5 I = 1 0.497056
+Merge costs: J = 7 I = 0 0.594988
+Merge costs: J = 3 I = 2 0.671427
+Merge costs: J = 6 I = 1 0.470509
+Merge costs: J = 8 I = 0 0.596509
+Merge costs: J = 7 I = 1 0.516139
+Merge costs: J = 4 I = 2 0.56457
+Merge costs: J = 8 I = 1 0.497016
+Merge costs: J = 5 I = 2 0.562653
+Merge costs: J = 6 I = 2 0.534486
+Merge costs: J = 7 I = 2 0.56687
+Merge costs: J = 8 I = 2 0.545158
+Shard 3 foi ativado e ira comecar
+END para 3 -> 22404622207072 
+
+Shard 3 foi read e ira comecar
+Merge costs: J = 4 I = 3 0.629379
+Merge costs: J = 5 I = 3 0.539262
+Merge costs: J = 6 I = 3 0.531864
+Shard 4 foi ativado e ira comecar
+END para 4 -> 22404624308320 
+
+Shard 4 foi read e ira comecar
+Merge costs: J = 7 I = 3 0.566358
+Merge costs: J = 5 I = 4 0.590744
+Merge costs: J = 8 I = 3 0.542096
+Merge costs: J = 6 I = 4 0.512559
+Merge costs: J = 7 I = 4 0.523732
+Shard 5 foi ativado e ira comecar
+END para 5 -> 22407922014304 
+
+Shard 5 foi read e ira comecar
+Merge costs: J = 8 I = 4 0.514227
+Merge costs: J = 6 I = 5 0.515328
+Merge costs: J = 7 I = 5 0.530912
+Merge costs: J = 8 I = 5 0.506705
+Shard 6 foi ativado e ira comecar
+END para 6 -> 22407922014304 
+
+Shard 6 foi read e ira comecar
+Merge costs: J = 7 I = 6 0.575979
+Merge costs: J = 8 I = 6 0.497467
+Iniciando o último merge
+Shard 7 foi ativado e ira comecar
+END para 7 -> 140730631178176 
+
+Shard 7 foi read e ira comecar
+Merge costs: J = 8 I = 7 0.545274
+Writing final merged KNN graphs to disk...
+Writing all global KNN graphs to file: ../results/NNDescent-KNNG.kgraph
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Writing shard 0 to position 0 with 111111 vectors
+Writing shard 1 to position 111111 with 111111 vectors
+Writing shard 2 to position 222222 with 111111 vectors
+Writing shard 3 to position 333333 with 111111 vectors
+Writing shard 4 to position 444444 with 111111 vectors
+Writing shard 5 to position 555555 with 111111 vectors
+Writing shard 6 to position 666666 with 111111 vectors
+Writing shard 7 to position 777777 with 111111 vectors
+Writing shard 8 to position 888888 with 111112 vectors
+Successfully wrote all global KNN graphs to file
+Final merged graphs written to: ../results/NNDescent-KNNG.kgraph
+Time cost = 28.641727 
+=========================================
+Execution finished at: Wed Jan 28 09:36:25 AM UTC 2026
+Total time elapsed: 0 minutes 37 seconds
+=========================================

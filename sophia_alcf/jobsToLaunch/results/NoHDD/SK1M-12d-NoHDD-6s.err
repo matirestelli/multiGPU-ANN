@@ -1,0 +1,49 @@
+Building shards costs: 0.571257
+Update graph costs: 0.02281
+Update graph costs: 0.022642
+Update graph costs: 0.039596
+Update graph costs: 0.032139
+Update graph costs: 0.043309
+Update graph costs: 0.024288
+Update graph costs: 0.034852
+No. 0 mergers cost: 3.69983
+No. 0 avg. cost: 0.739966
+
+
+Update graph costs: 0.022665
+Update graph costs: 0.033384
+Update graph costs: 0.035642
+No. 1 mergers cost: 2.91673
+No. 1 avg. cost: 0.729182
+
+
+Update graph costs: 0.031342
+Update graph costs: 0.030638
+No. 2 mergers cost: 2.19424
+No. 2 avg. cost: 0.731412
+
+
+Update graph costs: 0.022539
+Update graph costs: 0.022003
+No. 3 mergers cost: 1.44727
+No. 3 avg. cost: 0.723634
+
+
+Update graph costs: 0.023099
+No. 4 mergers cost: 0.781446
+No. 4 avg. cost: 0.781446
+
+
+1000000 32
+Total time cost: 17.7077 seconds
+
+========================================
+TIMING RESULTS (No-HDD version):
+========================================
+Total HDD time: 0 seconds
+Total Building time: 0.571257 seconds
+Total Merge time: 14.3411 seconds
+Total ANNS time: 17.7077 seconds
+========================================
+
+Timing results saved to ../results/1000000_k32_s6_NoHDD.txt

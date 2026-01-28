@@ -1,0 +1,118 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"PrgEnv-nvidia/8.6.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "PrgEnv-nvidia/8.6.0"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cuda/12.9"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuda/12.9"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/9.0.1"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cray-mpich/9.0.1"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Building shards costs: 0.614457
+Update graph costs: 0.016207
+Update graph costs: 0.015335
+Update graph costs: 0.016342
+Update graph costs: 0.026702
+Update graph costs: 0.054756
+Update graph costs: 0.051746
+Update graph costs: 0.026143
+Update graph costs: 0.015897
+Update graph costs: 0.021643
+Update graph costs: 0.016318
+Update graph costs: 0.021578
+Update graph costs: 0.016292
+Update graph costs: 0.015186
+Update graph costs: 0.049229
+No. 0 mergers cost: 4.9976
+No. 0 avg. cost: 0.6247
+
+
+Update graph costs: 0.021386
+Update graph costs: 0.016831
+Update graph costs: 0.016164
+No. 1 mergers cost: 3.76092
+No. 1 avg. cost: 0.537274
+
+
+Update graph costs: 0.020515
+Update graph costs: 0.026224
+Update graph costs: 0.016168
+Update graph costs: 0.015829
+No. 2 mergers cost: 3.55828
+No. 2 avg. cost: 0.593047
+
+
+Update graph costs: 0.02658
+Update graph costs: 0.021224
+Update graph costs: 0.021715
+Update graph costs: 0.026265
+Update graph costs: 0.021346
+Update graph costs: 0.021573
+No. 3 mergers cost: 2.92778
+No. 3 avg. cost: 0.585556
+
+
+Update graph costs: 0.016182
+Update graph costs: 0.016278
+Update graph costs: 0.015818
+No. 4 mergers cost: 2.21172
+No. 4 avg. cost: 0.55293
+
+
+Update graph costs: 0.016169
+Update graph costs: 0.01641
+Update graph costs: 0.026453
+No. 5 mergers cost: 1.6126
+No. 5 avg. cost: 0.537533
+
+
+Update graph costs: 0.026691
+Update graph costs: 0.016162
+No. 6 mergers cost: 1.11672
+No. 6 avg. cost: 0.558359
+
+
+Update graph costs: 0.016005
+No. 7 mergers cost: 0.561658
+No. 7 avg. cost: 0.561658
+
+
+1000000 32
+Total time cost: 25.1446 seconds
+
+========================================
+TIMING RESULTS (No-HDD version):
+========================================
+Total HDD time: 0 seconds
+Total Building time: 0.614457 seconds
+Total Merge time: 21.7347 seconds
+Total ANNS time: 25.1446 seconds
+========================================
+
+Timing results saved to ../results/1000000_k32_s9_NoHDD.txt

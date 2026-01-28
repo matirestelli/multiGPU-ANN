@@ -1,0 +1,54 @@
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ Cray MPICH loaded successfully
+Environment setup complete!
+=========================================
+Starting NON-DETERMINISTIC HDD FULL execution (build + merge with HDD storage)
+Starting execution at: Wed Jan 28 06:49:34 PM UTC 2026
+=========================================
+PREPARE SET TO false.
+SHARDS SET TO 3.
+N SET TO 1000000.
+Data path: ../data/vectors
+Total vecs num: 1000000
+Shards num: 3
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 333333
+Vecs num. of last shard: 333334
+There is no active ID.
+-> 1000000
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Iniciou?GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 1
+Building No. 2
+Building No. 0
+End building No.1 in 0.412459 seconds
+End building No.0 in 0.46166 seconds
+End building No.2 in 0.487324 seconds
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 22831379867424 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 1.93102
+Write KNN graph costs: 0.18051
+Merge costs: J = 2 I = 0 1.83483
+Write KNN graph costs: 0.180719
+Iniciando o último merge
+Shard 1 foi ativado e ira comecar
+END para 1 -> 140734501073536 
+
+Shard 1 foi read e ira comecar
+Merge costs: J = 2 I = 1 1.82319
+Write KNN graph costs: 0.177103
+Time cost = 17.225870 
+=========================================
+Execution finished at: Wed Jan 28 06:50:00 PM UTC 2026
+Total time elapsed: 0 minutes 26 seconds
+=========================================

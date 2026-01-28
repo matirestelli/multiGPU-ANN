@@ -1,0 +1,603 @@
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ Cray MPICH loaded successfully
+Environment setup complete!
+=========================================
+Starting NON-DETERMINISTIC NO-HDD FULL execution (build + merge in memory)
+Starting execution at: Wed Jan 28 05:08:01 AM UTC 2026
+=========================================
+SHARDS SET TO 24.
+N SET TO 1000000.
+MODE SET TO full.
+Setting up db_size = 1000000
+GPU 0: db_size = 1000000
+GPU 1: db_size = 1000000
+GPU 2: db_size = 1000000
+Loading data from: ../data/vectors.fvecs
+Loading all vector data into memory (parallel mode)...
+Loading shard 0: position=0, count=41666
+Loading shard 1: position=41666, count=41666
+Loading shard 2: position=83332, count=41666
+Loading shard 3: position=124998, count=41666
+Loading shard 4: position=166664, count=41666
+Loading shard 5: position=208330, count=41666
+Loading shard 6: position=249996, count=41666
+Loading shard 7: position=291662, count=41666
+Loading shard 8: position=333328, count=41666
+Loading shard 9: position=374994, count=41666
+Loading shard 10: position=416660, count=41666
+Loading shard 11: position=458326, count=41666
+Loading shard 12: position=499992, count=41666
+Loading shard 13: position=541658, count=41666
+Loading shard 14: position=583324, count=41666
+Loading shard 15: position=624990, count=41666
+Loading shard 16: position=666656, count=41666
+Loading shard 17: position=708322, count=41666
+Loading shard 18: position=749988, count=41666
+Loading shard 19: position=791654, count=41666
+Loading shard 20: position=833320, count=41666
+Loading shard 21: position=874986, count=41666
+Loading shard 22: position=916652, count=41666
+Loading shard 23: position=958318, count=41682
+Successfully loaded shard 23
+Successfully loaded shard 22
+Successfully loaded shard 21
+Successfully loaded shard 20
+Successfully loaded shard 19
+Successfully loaded shard 18
+Successfully loaded shard 17
+Successfully loaded shard 16
+Successfully loaded shard 15
+Successfully loaded shard 14
+Successfully loaded shard 13
+Successfully loaded shard 12
+Successfully loaded shard 11
+Successfully loaded shard 10
+Successfully loaded shard 9
+Successfully loaded shard 7
+Successfully loaded shard 8
+Successfully loaded shard 6
+Successfully loaded shard 5
+Successfully loaded shard 4
+Successfully loaded shard 3
+Successfully loaded shard 2
+Successfully loaded shard 1
+Successfully loaded shard 0
+All vector data loaded successfully (parallel)
+Successfully loaded 1000000 vectors of dimension 12 into 24 shards
+Data path: ../data/vectors
+Total vecs num: 1000000
+Shards num: 24
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 41666
+Vecs num. of last shard: 41682
+Vector data loaded for 24 shards
+Local KNN graphs stored for 0 shards
+Global KNN graphs stored for 0 shards
+-> 1000000
+Iniciou?GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 0
+Building No. 1
+Building No. 2
+End building No.2 in 0.10142 seconds
+Stored local KNN graph for shard 2
+Stored global KNN graph for shard 2
+End building No.1 in 0.105024 seconds
+End building No.0 in 0.105297 seconds
+Stored local KNN graph for shard 1
+Stored global KNN graph for shard 1
+Stored local KNN graph for shard 0
+Stored global KNN graph for shard 0
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 3
+Building No. 4
+Building No. 5
+End building No.3 in 0.084455 seconds
+End building No.4 in 0.085329 seconds
+Stored local KNN graph for shard 3
+Stored global KNN graph for shard 3
+Stored local KNN graph for shard 4
+Stored global KNN graph for shard 4
+End building No.5 in 0.0895 seconds
+Stored local KNN graph for shard 5
+Stored global KNN graph for shard 5
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 6
+Building No. 7
+Building No. 8
+End building No.8 in 0.076515 seconds
+End building No.6 in 0.079469 seconds
+End building No.7 in 0.079882 seconds
+Stored local KNN graph for shard 8
+Stored global KNN graph for shard 8
+Stored local KNN graph for shard 6
+Stored global KNN graph for shard 6
+Stored local KNN graph for shard 7
+Stored global KNN graph for shard 7
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 9
+Building No. 10
+Building No. 11
+End building No.11 in 0.072762 seconds
+Stored local KNN graph for shard 11
+Stored global KNN graph for shard 11
+End building No.9 in 0.076641 seconds
+End building No.10 in 0.076846 seconds
+Stored local KNN graph for shard 9
+Stored global KNN graph for shard 9
+Stored local KNN graph for shard 10
+Stored global KNN graph for shard 10
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 12
+Building No. 13
+Building No. 14
+End building No.12 in 0.077833 seconds
+End building No.14 in 0.079136 seconds
+Stored local KNN graph for shard 12
+Stored global KNN graph for shard 12
+End building No.13 in 0.081577 seconds
+Stored local KNN graph for shard 14
+Stored global KNN graph for shard 14
+Stored local KNN graph for shard 13
+Stored global KNN graph for shard 13
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 15
+Building No. 16
+Building No. 17
+End building No.17 in 0.071653 seconds
+End building No.16 in 0.073781 seconds
+Stored local KNN graph for shard 17
+Stored global KNN graph for shard 17
+Stored local KNN graph for shard 16
+Stored global KNN graph for shard 16
+End building No.15 in 0.079158 seconds
+Stored local KNN graph for shard 15
+Stored global KNN graph for shard 15
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 18
+Building No. 19
+Building No. 20
+End building No.18 in 0.072469 seconds
+Stored local KNN graph for shard 18
+Stored global KNN graph for shard 18
+End building No.20 in 0.075386 seconds
+End building No.19 in 0.078044 seconds
+Stored local KNN graph for shard 20
+Stored global KNN graph for shard 20
+Stored local KNN graph for shard 19
+Stored global KNN graph for shard 19
+GPU 0 is activated
+GPU 2 is activated
+GPU 1 is activated
+Building No. 21
+Building No. 23
+Building No. 22
+End building No.21 in 0.07552 seconds
+End building No.22 in 0.07643 seconds
+Stored local KNN graph for shard 21
+Stored global KNN graph for shard 21
+Stored local KNN graph for shard 22
+Stored global KNN graph for shard 22
+End building No.23 in 0.085427 seconds
+Stored local KNN graph for shard 23
+Stored global KNN graph for shard 23
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 23344336148448 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 0.431492
+Merge costs: J = 2 I = 0 0.357734
+Merge costs: J = 3 I = 0 0.381224
+Merge costs: J = 4 I = 0 0.37032
+Merge costs: J = 5 I = 0 0.359476
+Shard 1 foi ativado e ira comecar
+END para 1 -> 23344338249696 
+
+Shard 1 foi read e ira comecar
+Merge costs: J = 6 I = 0 0.394642
+Merge costs: J = 2 I = 1 0.423695
+Merge costs: J = 7 I = 0 0.301292
+Merge costs: J = 3 I = 1 0.388704
+Merge costs: J = 8 I = 0 0.295621
+Merge costs: J = 4 I = 1 0.37861
+Merge costs: J = 9 I = 0 0.39294
+Merge costs: J = 5 I = 1 0.358387
+Merge costs: J = 10 I = 0 0.391016
+Merge costs: J = 6 I = 1 0.392997
+Shard 2 foi ativado e ira comecar
+END para 2 -> 23344340350944 
+
+Shard 2 foi read e ira comecar
+Merge costs: J = 11 I = 0 0.35202
+Merge costs: J = 7 I = 1 0.301648
+Merge costs: J = 12 I = 0 0.326382
+Merge costs: J = 3 I = 2 0.411788
+Merge costs: J = 8 I = 1 0.301801
+Merge costs: J = 13 I = 0 0.303009
+Merge costs: J = 4 I = 2 0.365411
+Merge costs: J = 9 I = 1 0.395457
+Merge costs: J = 14 I = 0 0.306823
+Merge costs: J = 5 I = 2 0.354313
+Merge costs: J = 10 I = 1 0.390536
+Merge costs: J = 15 I = 0 0.363578
+Merge costs: J = 6 I = 2 0.386131
+Merge costs: J = 16 I = 0 0.312744
+Merge costs: J = 11 I = 1 0.357033
+Merge costs: J = 7 I = 2 0.290137
+Merge costs: J = 17 I = 0 0.300263
+Merge costs: J = 12 I = 1 0.330292
+Merge costs: J = 8 I = 2 0.285927
+Merge costs: J = 18 I = 0 0.339261
+Merge costs: J = 13 I = 1 0.306067
+Merge costs: J = 9 I = 2 0.385059
+Merge costs: J = 14 I = 1 0.312533
+Merge costs: J = 19 I = 0 0.393304
+Merge costs: J = 10 I = 2 0.384726
+Merge costs: J = 20 I = 0 0.314123
+Merge costs: J = 15 I = 1 0.370624
+Merge costs: J = 11 I = 2 0.344278
+Merge costs: J = 16 I = 1 0.315355
+Merge costs: J = 21 I = 0 0.332326
+Merge costs: J = 12 I = 2 0.312001
+Merge costs: J = 17 I = 1 0.300831
+Merge costs: J = 22 I = 0 0.302152
+Merge costs: J = 13 I = 2 0.291541
+Merge costs: J = 18 I = 1 0.341929
+Merge costs: J = 23 I = 0 0.395199
+Merge costs: J = 14 I = 2 0.297995
+Merge costs: J = 19 I = 1 0.390242
+Merge costs: J = 15 I = 2 0.357685
+Merge costs: J = 20 I = 1 0.320635
+Merge costs: J = 16 I = 2 0.295354
+Merge costs: J = 17 I = 2 0.282525
+Merge costs: J = 21 I = 1 0.335978
+Merge costs: J = 22 I = 1 0.301019
+Merge costs: J = 18 I = 2 0.332011
+Merge costs: J = 23 I = 1 0.401581
+Merge costs: J = 19 I = 2 0.385344
+Merge costs: J = 20 I = 2 0.304001
+Merge costs: J = 21 I = 2 0.322508
+Merge costs: J = 22 I = 2 0.288953
+Merge costs: J = 23 I = 2 0.382516
+Shard 3 foi ativado e ira comecar
+END para 3 -> 23344340350944 
+
+Shard 3 foi read e ira comecar
+Merge costs: J = 4 I = 3 0.422426
+Merge costs: J = 5 I = 3 0.374975
+Merge costs: J = 6 I = 3 0.408103
+Merge costs: J = 7 I = 3 0.321162
+Merge costs: J = 8 I = 3 0.31455
+Shard 4 foi ativado e ira comecar
+END para 4 -> 23344338249696 
+
+Shard 4 foi read e ira comecar
+Merge costs: J = 9 I = 3 0.405295
+Merge costs: J = 5 I = 4 0.407314
+Merge costs: J = 10 I = 3 0.405154
+Merge costs: J = 6 I = 4 0.401847
+Merge costs: J = 11 I = 3 0.365115
+Merge costs: J = 7 I = 4 0.307026
+Merge costs: J = 12 I = 3 0.34048
+Merge costs: J = 8 I = 4 0.306493
+Merge costs: J = 13 I = 3 0.318685
+Merge costs: J = 9 I = 4 0.397705
+Shard 5 foi ativado e ira comecar
+END para 5 -> 23344336148448 
+
+Shard 5 foi read e ira comecar
+Merge costs: J = 14 I = 3 0.321865
+Merge costs: J = 10 I = 4 0.396386
+Merge costs: J = 15 I = 3 0.384135
+Merge costs: J = 6 I = 5 0.431995
+Merge costs: J = 11 I = 4 0.358549
+Merge costs: J = 7 I = 5 0.292498
+Merge costs: J = 16 I = 3 0.326339
+Merge costs: J = 12 I = 4 0.330354
+Merge costs: J = 8 I = 5 0.286278
+Merge costs: J = 17 I = 3 0.311314
+Merge costs: J = 13 I = 4 0.30872
+Merge costs: J = 9 I = 5 0.382974
+Merge costs: J = 18 I = 3 0.358476
+Merge costs: J = 14 I = 4 0.317962
+Merge costs: J = 10 I = 5 0.381965
+Merge costs: J = 19 I = 3 0.40583
+Merge costs: J = 15 I = 4 0.376002
+Merge costs: J = 11 I = 5 0.349381
+Merge costs: J = 20 I = 3 0.327882
+Merge costs: J = 16 I = 4 0.315599
+Merge costs: J = 12 I = 5 0.322235
+Merge costs: J = 21 I = 3 0.351552
+Merge costs: J = 17 I = 4 0.305057
+Merge costs: J = 13 I = 5 0.290296
+Merge costs: J = 22 I = 3 0.317317
+Merge costs: J = 18 I = 4 0.350948
+Merge costs: J = 14 I = 5 0.299574
+Merge costs: J = 23 I = 3 0.411449
+Merge costs: J = 19 I = 4 0.398879
+Merge costs: J = 15 I = 5 0.362077
+Merge costs: J = 20 I = 4 0.319998
+Merge costs: J = 16 I = 5 0.300872
+Merge costs: J = 21 I = 4 0.342958
+Merge costs: J = 17 I = 5 0.286488
+Merge costs: J = 22 I = 4 0.307228
+Merge costs: J = 18 I = 5 0.333414
+Merge costs: J = 23 I = 4 0.403754
+Merge costs: J = 19 I = 5 0.391436
+Merge costs: J = 20 I = 5 0.304281
+Merge costs: J = 21 I = 5 0.328194
+Merge costs: J = 22 I = 5 0.288503
+Merge costs: J = 23 I = 5 0.386761
+Shard 6 foi ativado e ira comecar
+END para 6 -> 23344336148448 
+
+Shard 6 foi read e ira comecar
+Merge costs: J = 7 I = 6 0.360523
+Merge costs: J = 8 I = 6 0.329943
+Merge costs: J = 9 I = 6 0.419846
+Merge costs: J = 10 I = 6 0.421567
+Merge costs: J = 11 I = 6 0.385226
+Shard 7 foi ativado e ira comecar
+END para 7 -> 23344338249696 
+
+Shard 7 foi read e ira comecar
+Merge costs: J = 8 I = 7 0.275682
+Merge costs: J = 12 I = 6 0.354505
+Merge costs: J = 9 I = 7 0.319082
+Merge costs: J = 13 I = 6 0.330254
+Merge costs: J = 10 I = 7 0.317976
+Merge costs: J = 14 I = 6 0.33656
+Merge costs: J = 11 I = 7 0.283625
+Merge costs: J = 15 I = 6 0.39057
+Merge costs: J = 12 I = 7 0.2711
+Merge costs: J = 16 I = 6 0.339806
+Merge costs: J = 13 I = 7 0.252525
+Shard 8 foi ativado e ira comecar
+END para 8 -> 23344340350944 
+
+Shard 8 foi read e ira comecar
+Merge costs: J = 14 I = 7 0.256281
+Merge costs: J = 17 I = 6 0.323455
+Merge costs: J = 15 I = 7 0.304136
+Merge costs: J = 9 I = 8 0.34931
+Merge costs: J = 18 I = 6 0.366213
+Merge costs: J = 16 I = 7 0.260515
+Merge costs: J = 10 I = 8 0.310186
+Merge costs: J = 19 I = 6 0.421212
+Merge costs: J = 17 I = 7 0.246045
+Merge costs: J = 11 I = 8 0.274445
+Merge costs: J = 18 I = 7 0.272766
+Merge costs: J = 20 I = 6 0.345129
+Merge costs: J = 12 I = 8 0.261445
+Merge costs: J = 19 I = 7 0.322139
+Merge costs: J = 13 I = 8 0.236258
+Merge costs: J = 21 I = 6 0.365738
+Merge costs: J = 14 I = 8 0.244071
+Merge costs: J = 20 I = 7 0.261931
+Merge costs: J = 22 I = 6 0.32993
+Merge costs: J = 21 I = 7 0.267066
+Merge costs: J = 15 I = 8 0.293024
+Merge costs: J = 22 I = 7 0.249697
+Merge costs: J = 16 I = 8 0.249133
+Merge costs: J = 23 I = 6 0.424175
+Merge costs: J = 17 I = 8 0.234336
+Merge costs: J = 23 I = 7 0.322252
+Merge costs: J = 18 I = 8 0.266844
+Merge costs: J = 19 I = 8 0.314129
+Merge costs: J = 20 I = 8 0.252084
+Merge costs: J = 21 I = 8 0.258495
+Merge costs: J = 22 I = 8 0.239136
+Merge costs: J = 23 I = 8 0.317473
+Shard 9 foi ativado e ira comecar
+END para 9 -> 23344340350944 
+
+Shard 9 foi read e ira comecar
+Merge costs: J = 10 I = 9 0.471061
+Merge costs: J = 11 I = 9 0.373956
+Merge costs: J = 12 I = 9 0.346959
+Merge costs: J = 13 I = 9 0.325748
+Merge costs: J = 14 I = 9 0.332285
+Shard 10 foi ativado e ira comecar
+END para 10 -> 23344338249696 
+
+Shard 10 foi read e ira comecar
+Merge costs: J = 15 I = 9 0.384277
+Merge costs: J = 11 I = 10 0.421115
+Merge costs: J = 16 I = 9 0.336563
+Merge costs: J = 12 I = 10 0.34493
+Merge costs: J = 17 I = 9 0.321001
+Merge costs: J = 13 I = 10 0.323942
+Merge costs: J = 18 I = 9 0.357739
+Merge costs: J = 14 I = 10 0.329687
+Merge costs: J = 19 I = 9 0.416937
+Merge costs: J = 15 I = 10 0.391989
+Shard 11 foi ativado e ira comecar
+END para 11 -> 23344336148448 
+
+Shard 11 foi read e ira comecar
+Merge costs: J = 20 I = 9 0.33535
+Merge costs: J = 16 I = 10 0.333278
+Merge costs: J = 12 I = 11 0.361163
+Merge costs: J = 21 I = 9 0.353678
+Merge costs: J = 17 I = 10 0.334153
+Merge costs: J = 13 I = 11 0.284498
+Merge costs: J = 22 I = 9 0.321337
+Merge costs: J = 18 I = 10 0.359049
+Merge costs: J = 14 I = 11 0.287746
+Merge costs: J = 23 I = 9 0.42817
+Merge costs: J = 15 I = 11 0.346826
+Merge costs: J = 19 I = 10 0.415919
+Merge costs: J = 16 I = 11 0.297726
+Merge costs: J = 20 I = 10 0.332359
+Merge costs: J = 17 I = 11 0.278879
+Merge costs: J = 21 I = 10 0.362446
+Merge costs: J = 18 I = 11 0.324967
+Merge costs: J = 22 I = 10 0.312338
+Merge costs: J = 19 I = 11 0.372544
+Merge costs: J = 23 I = 10 0.423932
+Merge costs: J = 20 I = 11 0.297343
+Merge costs: J = 21 I = 11 0.317864
+Merge costs: J = 22 I = 11 0.284011
+Merge costs: J = 23 I = 11 0.376463
+Shard 12 foi ativado e ira comecar
+END para 12 -> 23344336148448 
+
+Shard 12 foi read e ira comecar
+Merge costs: J = 13 I = 12 0.300957
+Merge costs: J = 14 I = 12 0.273059
+Merge costs: J = 15 I = 12 0.325848
+Merge costs: J = 16 I = 12 0.277346
+Merge costs: J = 17 I = 12 0.258127
+Merge costs: J = 18 I = 12 0.293273
+Shard 13 foi ativado e ira comecar
+END para 13 -> 23344338249696 
+
+Shard 13 foi read e ira comecar
+Merge costs: J = 19 I = 12 0.349208
+Merge costs: J = 14 I = 13 0.291602
+Merge costs: J = 20 I = 12 0.276546
+Merge costs: J = 15 I = 13 0.303265
+Merge costs: J = 21 I = 12 0.290489
+Merge costs: J = 16 I = 13 0.2538
+Merge costs: J = 22 I = 12 0.261795
+Merge costs: J = 17 I = 13 0.2396
+Merge costs: J = 23 I = 12 0.352582
+Merge costs: J = 18 I = 13 0.274226
+Merge costs: J = 19 I = 13 0.321268
+Merge costs: J = 20 I = 13 0.257095
+Shard 14 foi ativado e ira comecar
+END para 14 -> 23344340350944 
+
+Shard 14 foi read e ira comecar
+Merge costs: J = 21 I = 13 0.264637
+Merge costs: J = 15 I = 14 0.350581
+Merge costs: J = 22 I = 13 0.245119
+Merge costs: J = 16 I = 14 0.260586
+Merge costs: J = 23 I = 13 0.326916
+Merge costs: J = 17 I = 14 0.244219
+Merge costs: J = 18 I = 14 0.279295
+Merge costs: J = 19 I = 14 0.33078
+Merge costs: J = 20 I = 14 0.262434
+Merge costs: J = 21 I = 14 0.278799
+Merge costs: J = 22 I = 14 0.249205
+Merge costs: J = 23 I = 14 0.330284
+Shard 15 foi ativado e ira comecar
+END para 15 -> 23344340350944 
+
+Shard 15 foi read e ira comecar
+Merge costs: J = 16 I = 15 0.355527
+Merge costs: J = 17 I = 15 0.299372
+Merge costs: J = 18 I = 15 0.345527
+Merge costs: J = 19 I = 15 0.390254
+Merge costs: J = 20 I = 15 0.322339
+Shard 16 foi ativado e ira comecar
+END para 16 -> 23344338249696 
+
+Shard 16 foi read e ira comecar
+Merge costs: J = 21 I = 15 0.330478
+Merge costs: J = 17 I = 16 0.292921
+Merge costs: J = 22 I = 15 0.304909
+Merge costs: J = 18 I = 16 0.281925
+Merge costs: J = 23 I = 15 0.393976
+Merge costs: J = 19 I = 16 0.333193
+Merge costs: J = 20 I = 16 0.264362
+Merge costs: J = 21 I = 16 0.275903
+Merge costs: J = 22 I = 16 0.254249
+Shard 17 foi ativado e ira comecar
+END para 17 -> 23344336148448 
+
+Shard 17 foi read e ira comecar
+Merge costs: J = 23 I = 16 0.329494
+Merge costs: J = 18 I = 17 0.317803
+Merge costs: J = 19 I = 17 0.3158
+Merge costs: J = 20 I = 17 0.251689
+Merge costs: J = 21 I = 17 0.261685
+Merge costs: J = 22 I = 17 0.240844
+Merge costs: J = 23 I = 17 0.317248
+Shard 18 foi ativado e ira comecar
+END para 18 -> 23344336148448 
+
+Shard 18 foi read e ira comecar
+Merge costs: J = 19 I = 18 0.431067
+Merge costs: J = 20 I = 18 0.293018
+Merge costs: J = 21 I = 18 0.315855
+Merge costs: J = 22 I = 18 0.27551
+Merge costs: J = 23 I = 18 0.373353
+Shard 19 foi ativado e ira comecar
+END para 19 -> 23344338249696 
+
+Shard 19 foi read e ira comecar
+Merge costs: J = 20 I = 19 0.396554
+Merge costs: J = 21 I = 19 0.357991
+Merge costs: J = 22 I = 19 0.321661
+Merge costs: J = 23 I = 19 0.422387
+Shard 20 foi ativado e ira comecar
+END para 20 -> 23344340350944 
+
+Shard 20 foi read e ira comecar
+Merge costs: J = 21 I = 20 0.302776
+Merge costs: J = 22 I = 20 0.255874
+Merge costs: J = 23 I = 20 0.334678
+Shard 21 foi ativado e ira comecar
+END para 21 -> 23344340350944 
+
+Shard 21 foi read e ira comecar
+Merge costs: J = 22 I = 21 0.29965
+Merge costs: J = 23 I = 21 0.356459
+Iniciando o último merge
+Shard 22 foi ativado e ira comecar
+END para 22 -> 140731328294336 
+
+Shard 22 foi read e ira comecar
+Merge costs: J = 23 I = 22 0.35523
+Writing final merged KNN graphs to disk...
+Writing all global KNN graphs to file: ../results/NNDescent-KNNG.kgraph
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Writing shard 0 to position 0 with 41666 vectors
+Writing shard 1 to position 41666 with 41666 vectors
+Writing shard 2 to position 83332 with 41666 vectors
+Writing shard 3 to position 124998 with 41666 vectors
+Writing shard 4 to position 166664 with 41666 vectors
+Writing shard 5 to position 208330 with 41666 vectors
+Writing shard 6 to position 249996 with 41666 vectors
+Writing shard 7 to position 291662 with 41666 vectors
+Writing shard 8 to position 333328 with 41666 vectors
+Writing shard 9 to position 374994 with 41666 vectors
+Writing shard 10 to position 416660 with 41666 vectors
+Writing shard 11 to position 458326 with 41666 vectors
+Writing shard 12 to position 499992 with 41666 vectors
+Writing shard 13 to position 541658 with 41666 vectors
+Writing shard 14 to position 583324 with 41666 vectors
+Writing shard 15 to position 624990 with 41666 vectors
+Writing shard 16 to position 666656 with 41666 vectors
+Writing shard 17 to position 708322 with 41666 vectors
+Writing shard 18 to position 749988 with 41666 vectors
+Writing shard 19 to position 791654 with 41666 vectors
+Writing shard 20 to position 833320 with 41666 vectors
+Writing shard 21 to position 874986 with 41666 vectors
+Writing shard 22 to position 916652 with 41666 vectors
+Writing shard 23 to position 958318 with 41682 vectors
+Successfully wrote all global KNN graphs to file
+Final merged graphs written to: ../results/NNDescent-KNNG.kgraph
+Time cost = 72.613289 
+=========================================
+Execution finished at: Wed Jan 28 05:09:23 AM UTC 2026
+Total time elapsed: 1 minutes 22 seconds
+=========================================

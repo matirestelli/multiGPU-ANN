@@ -1,0 +1,156 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"conda/2024-08-08"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "conda/2024-08-08"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+/home/mrest/multiGPU-ANN/sophia_alcf/env_sophia.sh: line 16: /soft/applications/miniconda3/conda_tf/bin/activate: No such file or directory
+Lmod has detected the following error: The following module(s) are unknown:
+"compilers/openmpi/5.0.3"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "compilers/openmpi/5.0.3"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x154005d3f5c0>: Failed to establish a new connection: [Errno 101] Network is unreachable',)': /simple/matplotlib/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x154005d3fe48>: Failed to establish a new connection: [Errno 101] Network is unreachable',)': /simple/matplotlib/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x154005d3fc88>: Failed to establish a new connection: [Errno 101] Network is unreachable',)': /simple/matplotlib/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x154005d2a470>: Failed to establish a new connection: [Errno 101] Network is unreachable',)': /simple/matplotlib/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x154005d2a5c0>: Failed to establish a new connection: [Errno 101] Network is unreachable',)': /simple/matplotlib/
+ERROR: Could not find a version that satisfies the requirement matplotlib (from versions: none)
+ERROR: No matching distribution found for matplotlib
+Building shards costs: 0.533793
+Update graph costs: 0.008004
+Update graph costs: 0.008278
+Update graph costs: 0.008821
+Update graph costs: 0.008369
+Update graph costs: 0.008183
+Update graph costs: 0.008397
+Update graph costs: 0.008813
+Update graph costs: 0.007808
+Update graph costs: 0.008016
+Update graph costs: 0.007045
+Update graph costs: 0.009447
+Update graph costs: 0.007046
+Update graph costs: 0.008839
+Update graph costs: 0.007845
+Update graph costs: 0.00792
+Update graph costs: 0.00806
+Update graph costs: 0.007112
+Update graph costs: 0.007055
+Update graph costs: 0.008103
+No. 0 mergers cost: 5.29207
+No. 0 avg. cost: 0.481097
+
+
+Update graph costs: 0.00711
+Update graph costs: 0.007019
+Update graph costs: 0.007882
+Update graph costs: 0.007824
+Update graph costs: 0.007106
+Update graph costs: 0.007064
+Update graph costs: 0.007067
+Update graph costs: 0.008368
+No. 1 mergers cost: 5.05515
+No. 1 avg. cost: 0.505515
+
+
+Update graph costs: 0.007869
+Update graph costs: 0.007123
+Update graph costs: 0.007103
+No. 2 mergers cost: 4.08788
+No. 2 avg. cost: 0.454208
+
+
+Update graph costs: 0.007881
+Update graph costs: 0.007895
+Update graph costs: 0.008685
+Update graph costs: 0.007868
+Update graph costs: 0.009061
+Update graph costs: 0.006993
+Update graph costs: 0.008691
+Update graph costs: 0.00783
+Update graph costs: 0.007031
+Update graph costs: 0.007955
+Update graph costs: 0.007015
+Update graph costs: 0.007893
+No. 3 mergers cost: 3.91319
+No. 3 avg. cost: 0.489149
+
+
+Update graph costs: 0.007827
+Update graph costs: 0.007792
+Update graph costs: 0.007052
+Update graph costs: 0.00704
+Update graph costs: 0.007052
+Update graph costs: 0.00834
+No. 4 mergers cost: 3.28375
+No. 4 avg. cost: 0.469108
+
+
+Update graph costs: 0.007858
+Update graph costs: 0.007021
+Update graph costs: 0.007068
+No. 5 mergers cost: 2.58967
+No. 5 avg. cost: 0.431612
+
+
+Update graph costs: 0.007843
+Update graph costs: 0.009038
+Update graph costs: 0.008691
+Update graph costs: 0.007947
+Update graph costs: 0.007879
+No. 6 mergers cost: 2.32655
+No. 6 avg. cost: 0.465311
+
+
+Update graph costs: 0.007005
+Update graph costs: 0.0078
+Update graph costs: 0.007017
+Update graph costs: 0.008324
+No. 7 mergers cost: 1.98596
+No. 7 avg. cost: 0.496489
+
+
+Update graph costs: 0.007671
+Update graph costs: 0.006934
+Update graph costs: 0.006997
+No. 8 mergers cost: 1.39759
+No. 8 avg. cost: 0.465862
+
+
+Update graph costs: 0.007857
+Update graph costs: 0.007868
+No. 9 mergers cost: 1.08097
+No. 9 avg. cost: 0.540483
+
+
+Update graph costs: 0.007006
+No. 10 mergers cost: 0.634176
+No. 10 avg. cost: 0.634176
+
+
+1000000 32
+Total time cost: 32.9636 seconds
+
+========================================
+TIMING RESULTS (No-HDD version):
+========================================
+Total HDD time: 0 seconds
+Total Building time: 0.533793 seconds
+Total Merge time: 29.7124 seconds
+Total ANNS time: 32.9636 seconds
+========================================
+
+Timing results saved to ../results/1000000_k32_s12_NoHDD.txt
