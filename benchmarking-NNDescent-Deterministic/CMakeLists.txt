@@ -3,10 +3,11 @@ project(gpuknn LANGUAGES CXX CUDA)
 
 enable_language(CUDA)
 
-# Manually set correct NVHPC CUDA paths
-set(CUDART_LIBRARY "/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/lib64/libcudart.so")
-set(CURAND_LIBRARY "/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/math_libs/lib64/libcurand.so")
-set(CUBLAS_LIBRARY "/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/math_libs/lib64/libcublas.so")
+# Set correct CUDA paths for Sophia at ALCF (cudatoolkit 12.6.0)
+set(CUDA_ROOT "/soft/compilers/cudatoolkit/cuda-12.6.0")
+set(CUDART_LIBRARY "${CUDA_ROOT}/lib64/libcudart.so")
+set(CURAND_LIBRARY "${CUDA_ROOT}/lib64/libcurand.so")
+set(CUBLAS_LIBRARY "${CUDA_ROOT}/lib64/libcublas.so")
 
 # GPU library
 add_library(knncuda STATIC
@@ -52,7 +53,6 @@ target_link_libraries(gknng
     ${CUDART_LIBRARY}
     ${CURAND_LIBRARY}
     ${CUBLAS_LIBRARY}
-    nvToolsExt
     curand_static
     cublas_static
     cudart_static
@@ -73,7 +73,6 @@ target_link_libraries(generate_dummy_knn
     ${CUDART_LIBRARY}
     ${CURAND_LIBRARY}
     ${CUBLAS_LIBRARY}
-    nvToolsExt
     curand_static
     cublas_static
     cudart_static

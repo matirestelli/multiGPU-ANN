@@ -1,0 +1,183 @@
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ Cray MPICH loaded successfully
+Environment setup complete!
+=========================================
+Starting NON-DETERMINISTIC NO-HDD FULL execution (build + merge in memory)
+Starting execution at: Wed Jan 28 09:46:19 PM UTC 2026
+=========================================
+SHARDS SET TO 9.
+N SET TO 10000000.
+MODE SET TO full.
+Setting up db_size = 10000000
+GPU 0: db_size = 10000000
+GPU 1: db_size = 10000000
+GPU 2: db_size = 10000000
+Loading data from: ../data/vectors.fvecs
+Loading all vector data into memory (parallel mode)...
+Loading shard 0: position=0, count=1111111
+Loading shard 1: position=1111111, count=1111111
+Loading shard 2: position=2222222, count=1111111
+Loading shard 3: position=3333333, count=1111111
+Loading shard 4: position=4444444, count=1111111
+Loading shard 6: position=6666666, count=1111111
+Loading shard 5: position=5555555, count=1111111
+Loading shard 8: position=8888888, count=1111112
+Loading shard 7: position=7777777, count=1111111
+Successfully loaded shard 5
+Successfully loaded shard 6
+Successfully loaded shard 8
+Successfully loaded shard 7
+Successfully loaded shard 0
+Successfully loaded shard 1
+Successfully loaded shard 3
+Successfully loaded shard 2
+Successfully loaded shard 4
+All vector data loaded successfully (parallel)
+Successfully loaded 10000000 vectors of dimension 12 into 9 shards
+Data path: ../data/vectors
+Total vecs num: 10000000
+Shards num: 9
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 1111111
+Vecs num. of last shard: 1111112
+Vector data loaded for 9 shards
+Local KNN graphs stored for 0 shards
+Global KNN graphs stored for 0 shards
+-> 10000000
+Iniciou?GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 2
+Building No. 0
+Building No. 1
+End building No.1 in 0.928317 seconds
+End building No.0 in 0.971883 seconds
+End building No.2 in 0.974898 seconds
+Stored local KNN graph for shard 1
+Stored global KNN graph for shard 1
+Stored local KNN graph for shard 2
+Stored global KNN graph for shard 2
+Stored local KNN graph for shard 0
+Stored global KNN graph for shard 0
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 5
+Building No. 3
+Building No. 4
+End building No.5 in 0.895986 seconds
+End building No.3 in 0.911135 seconds
+End building No.4 in 0.912229 seconds
+Stored local KNN graph for shard 5
+Stored global KNN graph for shard 5
+Stored local KNN graph for shard 3
+Stored global KNN graph for shard 3
+Stored local KNN graph for shard 4
+Stored global KNN graph for shard 4
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 6
+Building No. 7
+Building No. 8
+End building No.8 in 0.839272 seconds
+End building No.7 in 0.875145 seconds
+Stored local KNN graph for shard 8
+Stored global KNN graph for shard 8
+End building No.6 in 0.920618 seconds
+Stored local KNN graph for shard 7
+Stored global KNN graph for shard 7
+Stored local KNN graph for shard 6
+Stored global KNN graph for shard 6
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 23268652058592 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 4.26668
+Merge costs: J = 2 I = 0 4.38148
+Merge costs: J = 3 I = 0 4.70614
+Shard 1 foi ativado e ira comecar
+END para 1 -> 23268649957344 
+
+Shard 1 foi read e ira comecar
+Merge costs: J = 2 I = 1 3.94428
+Merge costs: J = 4 I = 0 4.38168
+Merge costs: J = 3 I = 1 4.19931
+Merge costs: J = 5 I = 0 4.74862
+Merge costs: J = 4 I = 1 3.97802
+Shard 2 foi ativado e ira comecar
+END para 2 -> 23268594522080 
+
+Shard 2 foi read e ira comecar
+Merge costs: J = 6 I = 0 4.6906
+Merge costs: J = 5 I = 1 4.1974
+Merge costs: J = 3 I = 2 4.31461
+Merge costs: J = 7 I = 0 4.44477
+Merge costs: J = 4 I = 2 4.02207
+Merge costs: J = 6 I = 1 4.17749
+Merge costs: J = 8 I = 0 4.30509
+Merge costs: J = 7 I = 1 3.93207
+Merge costs: J = 5 I = 2 4.28006
+Merge costs: J = 8 I = 1 3.90996
+Merge costs: J = 6 I = 2 4.26972
+Merge costs: J = 7 I = 2 4.00698
+Merge costs: J = 8 I = 2 3.95653
+Shard 3 foi ativado e ira comecar
+END para 3 -> 23268594522080 
+
+Shard 3 foi read e ira comecar
+Merge costs: J = 4 I = 3 4.29251
+Merge costs: J = 5 I = 3 4.65321
+Merge costs: J = 6 I = 3 4.63959
+Shard 4 foi ativado e ira comecar
+END para 4 -> 23268649957344 
+
+Shard 4 foi read e ira comecar
+Merge costs: J = 7 I = 3 4.37773
+Merge costs: J = 5 I = 4 4.37921
+Merge costs: J = 6 I = 4 4.27599
+Merge costs: J = 8 I = 3 4.25958
+Merge costs: J = 7 I = 4 4.07377
+Shard 5 foi ativado e ira comecar
+END para 5 -> 23268652058592 
+
+Shard 5 foi read e ira comecar
+Merge costs: J = 8 I = 4 3.97093
+Merge costs: J = 6 I = 5 4.66129
+Merge costs: J = 7 I = 5 4.36669
+Merge costs: J = 8 I = 5 4.3004
+Shard 6 foi ativado e ira comecar
+END para 6 -> 23268652058592 
+
+Shard 6 foi read e ira comecar
+Merge costs: J = 7 I = 6 4.37872
+Merge costs: J = 8 I = 6 4.21983
+Iniciando o último merge
+Shard 7 foi ativado e ira comecar
+END para 7 -> 140727756699712 
+
+Shard 7 foi read e ira comecar
+Merge costs: J = 8 I = 7 3.9965
+Writing final merged KNN graphs to disk...
+Writing all global KNN graphs to file: ../results/NNDescent-KNNG.kgraph
+Na hora de criar o grafo: NUM: 10000000 e DIM = 32
+SIZET = 2640000000
+Writing shard 0 to position 0 with 1111111 vectors
+Writing shard 1 to position 1111111 with 1111111 vectors
+Writing shard 2 to position 2222222 with 1111111 vectors
+Writing shard 3 to position 3333333 with 1111111 vectors
+Writing shard 4 to position 4444444 with 1111111 vectors
+Writing shard 5 to position 5555555 with 1111111 vectors
+Writing shard 6 to position 6666666 with 1111111 vectors
+Writing shard 7 to position 7777777 with 1111111 vectors
+Writing shard 8 to position 8888888 with 1111112 vectors
+Successfully wrote all global KNN graphs to file
+Final merged graphs written to: ../results/NNDescent-KNNG.kgraph
+Time cost = 120.397629 
+=========================================
+Execution finished at: Wed Jan 28 09:49:05 PM UTC 2026
+Total time elapsed: 2 minutes 46 seconds
+=========================================

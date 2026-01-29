@@ -1,6 +1,6 @@
 #include <assert.h>
 #include <cuda_profiler_api.h>
-#include <nvToolsExt.h>
+//#include <nvToolsExt.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -62,7 +62,7 @@ void TestConstructLargeKNNGraph(int shards, int n) {
   GenLargeKNNGraph(ref_path, result_path, K, shards);
 
   printf("Time cost = %lf \n", timer.end());
-  nvtxMark("Write final result Phase");
+  //nvtxMark("Write final result Phase");
 
   ToTxtResult(result_path, result_path + ".txt", n);
 }

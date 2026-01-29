@@ -3,10 +3,19 @@ project(gpuknn LANGUAGES CXX CUDA)
 
 enable_language(CUDA)
 
-# Correct Leonardo CUDA module paths
-set(CUDART_LIBRARY "/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/lib64/libcudart.so")
-set(CURAND_LIBRARY "/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/math_libs/lib64/libcurand.so")
-set(CUBLAS_LIBRARY "/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/math_libs/lib64/libcublas.so")
+# Set correct CUDA paths for Polaris at ALCF (cudatoolkit 12.9)
+set(CUDA_ROOT "$ENV{CUDA_HOME}")
+if(NOT CUDA_ROOT)
+    # Fallback for Polaris default CUDA path
+    set(CUDA_ROOT "/opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda")
+endif()
+set(CUDART_LIBRARY "${CUDA_ROOT}/targets/x86_64-linux/lib/libcudart.so")
+set(CURAND_LIBRARY "/opt/nvidia/hpc_sdk/Linux_x86_64/25.5/REDIST/math_libs/12.9/targets/x86_64-linux/lib/libcurand.so")
+set(CUBLAS_LIBRARY "/opt/nvidia/hpc_sdk/Linux_x86_64/25.5/REDIST/math_libs/12.9/targets/x86_64-linux/lib/libcublas.so")
+
+# Include directories for NVIDIA libraries and tools
+include_directories(${CUDA_ROOT}/targets/x86_64-linux/include)
+include_directories(${CUDA_ROOT}/targets/x86_64-linux/include/nvtx3)
 
 # GPU library
 add_library(knncuda STATIC
@@ -50,9 +59,5 @@ target_link_libraries(gknng
     ${CUDART_LIBRARY}
     ${CURAND_LIBRARY}
     ${CUBLAS_LIBRARY}
-    nvToolsExt
-    curand_static
-    cublas_static
-    cudart_static
-    -lrt -lpthread -ldl
 )
+

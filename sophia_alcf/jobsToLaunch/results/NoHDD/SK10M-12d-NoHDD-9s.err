@@ -1,0 +1,82 @@
+Building shards costs: 3.01921
+Update graph costs: 0.103425
+Update graph costs: 0.105011
+Update graph costs: 0.119602
+Update graph costs: 0.093968
+Update graph costs: 0.103342
+Update graph costs: 0.102399
+Update graph costs: 0.103309
+Update graph costs: 0.091545
+Update graph costs: 0.115013
+Update graph costs: 0.090868
+Update graph costs: 0.122739
+Update graph costs: 0.105525
+Update graph costs: 0.123492
+Update graph costs: 0.133941
+Update graph costs: 0.105281
+No. 0 mergers cost: 36.7864
+No. 0 avg. cost: 4.5983
+
+
+Update graph costs: 0.091037
+Update graph costs: 0.089954
+Update graph costs: 0.091338
+No. 1 mergers cost: 29.0344
+No. 1 avg. cost: 4.14777
+
+
+Update graph costs: 0.101865
+Update graph costs: 0.090033
+Update graph costs: 0.090718
+No. 2 mergers cost: 25.4694
+No. 2 avg. cost: 4.2449
+
+
+Update graph costs: 0.107289
+Update graph costs: 0.106931
+Update graph costs: 0.118508
+Update graph costs: 0.122539
+Update graph costs: 0.144983
+Update graph costs: 0.148939
+Update graph costs: 0.155312
+No. 3 mergers cost: 22.8562
+No. 3 avg. cost: 4.57124
+
+
+Update graph costs: 0.091704
+Update graph costs: 0.091344
+No. 4 mergers cost: 17.1549
+No. 4 avg. cost: 4.28872
+
+
+Update graph costs: 0.101386
+Update graph costs: 0.090069
+Update graph costs: 0.090398
+No. 5 mergers cost: 13.6106
+No. 5 avg. cost: 4.53686
+
+
+Update graph costs: 0.104181
+Update graph costs: 0.104274
+No. 6 mergers cost: 8.80723
+No. 6 avg. cost: 4.40362
+
+
+Update graph costs: 0.089472
+No. 7 mergers cost: 4.08611
+No. 7 avg. cost: 4.08611
+
+
+10000000 32
+Total time cost: 120.218 seconds
+
+========================================
+TIMING RESULTS (No-HDD version):
+========================================
+Total HDD time: 0 seconds
+Total Building time: 3.01921 seconds
+Total Merge time: 108.078 seconds
+Total ANNS time: 120.218 seconds
+========================================
+
+Timing results saved to ../results/10000000_k32_s9_NoHDD.txt

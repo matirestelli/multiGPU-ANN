@@ -745,7 +745,7 @@ void GenLargeKNNGraph(const string &vecs_data_path, const string &out_data_path,
   Timer knn_timer;
   knn_timer.start();
 
-  nvtxMark("Building Shards Phase");
+  //nvtxMark("Building Shards Phase");
   
   for (int s = 0; s < iters; s++) {
     vector<thread> threads;
@@ -766,7 +766,7 @@ void GenLargeKNNGraph(const string &vecs_data_path, const string &out_data_path,
   sleep(2);
 
   printf("\nIniciando o merge\n");
-  nvtxMark("Start MultiGPU Merge Phase");
+  //nvtxMark("Start MultiGPU Merge Phase");
 
   for (int s = 0; s < iters; s++) {
     vector<thread> threads;

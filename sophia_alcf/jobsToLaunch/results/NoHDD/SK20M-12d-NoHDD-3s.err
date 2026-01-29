@@ -1,0 +1,20 @@
+Building shards costs: 5.74542
+Update graph costs: 0.820205
+Update graph costs: 0.60137
+No. 0 mergers cost: 48.4194
+No. 0 avg. cost: 24.2097
+
+
+20000000 32
+Total time cost: 69.7282 seconds
+
+========================================
+TIMING RESULTS (No-HDD version):
+========================================
+Total HDD time: 0 seconds
+Total Building time: 5.74542 seconds
+Total Merge time: 49.4198 seconds
+Total ANNS time: 69.7282 seconds
+========================================
+
+Timing results saved to ../results/20000000_k32_s3_NoHDD.txt

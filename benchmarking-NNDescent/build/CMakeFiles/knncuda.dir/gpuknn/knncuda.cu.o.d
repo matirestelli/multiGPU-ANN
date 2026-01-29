@@ -1,73 +1,106 @@
-CMakeFiles/knncuda.dir/gpuknn/knncuda.cu.o : /leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/benchmarking-NNDescent-IO/gpuknn/knncuda.cu \
+CMakeFiles/knncuda.dir/gpuknn/knncuda.cu.o : /home/mrest/multiGPU-ANN/benchmarking-NNDescent/gpuknn/knncuda.cu \
     /usr/include/stdc-predef.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_runtime.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/host_config.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuda_runtime.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/host_config.h \
     /usr/include/features.h \
-    /usr/include/sys/cdefs.h \
+    /usr/include/features-time64.h \
     /usr/include/bits/wordsize.h \
+    /usr/include/bits/timesize.h \
+    /usr/include/sys/cdefs.h \
     /usr/include/bits/long-double.h \
     /usr/include/gnu/stubs.h \
     /usr/include/gnu/stubs-64.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/builtin_types.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/device_types.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/host_defines.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/driver_types.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/vector_types.h \
-    /usr/lib/gcc/x86_64-redhat-linux/8/include/limits.h \
-    /usr/lib/gcc/x86_64-redhat-linux/8/include/syslimits.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/builtin_types.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/device_types.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/host_defines.h \
+    /usr/include/ctype.h \
+    /usr/include/bits/types.h \
+    /usr/include/bits/typesizes.h \
+    /usr/include/bits/time64.h \
+    /usr/include/bits/endian.h \
+    /usr/include/bits/endianness.h \
+    /usr/include/bits/types/locale_t.h \
+    /usr/include/bits/types/__locale_t.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/driver_types.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/vector_types.h \
+    /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed/limits.h \
+    /usr/lib64/gcc/x86_64-suse-linux/7/include-fixed/syslimits.h \
     /usr/include/limits.h \
     /usr/include/bits/libc-header-start.h \
     /usr/include/bits/posix1_lim.h \
     /usr/include/bits/local_lim.h \
     /usr/include/linux/limits.h \
+    /usr/include/bits/pthread_stack_min-dynamic.h \
     /usr/include/bits/posix2_lim.h \
     /usr/include/bits/xopen_lim.h \
     /usr/include/bits/uio_lim.h \
-    /usr/lib/gcc/x86_64-redhat-linux/8/include/stddef.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/surface_types.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/texture_types.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/library_types.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/channel_descriptor.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_runtime_api.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_device_runtime_api.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/driver_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/vector_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/vector_functions.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/common_functions.h \
+    /usr/lib64/gcc/x86_64-suse-linux/7/include/stddef.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/surface_types.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/texture_types.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/library_types.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/channel_descriptor.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuda_runtime_api.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuda_device_runtime_api.h \
+    /usr/include/c++/7/stdlib.h \
+    /usr/include/c++/7/cstdlib \
+    /usr/include/c++/7/x86_64-suse-linux/bits/c++config.h \
+    /usr/include/c++/7/x86_64-suse-linux/bits/os_defines.h \
+    /usr/include/c++/7/x86_64-suse-linux/bits/cpu_defines.h \
+    /usr/include/stdlib.h \
+    /usr/include/bits/waitflags.h \
+    /usr/include/bits/waitstatus.h \
+    /usr/include/bits/floatn.h \
+    /usr/include/bits/floatn-common.h \
+    /usr/include/sys/types.h \
+    /usr/include/bits/types/clock_t.h \
+    /usr/include/bits/types/clockid_t.h \
+    /usr/include/bits/types/time_t.h \
+    /usr/include/bits/types/timer_t.h \
+    /usr/include/bits/stdint-intn.h \
+    /usr/include/endian.h \
+    /usr/include/bits/byteswap.h \
+    /usr/include/bits/uintn-identity.h \
+    /usr/include/sys/select.h \
+    /usr/include/bits/select.h \
+    /usr/include/bits/types/sigset_t.h \
+    /usr/include/bits/types/__sigset_t.h \
+    /usr/include/bits/types/struct_timeval.h \
+    /usr/include/bits/types/struct_timespec.h \
+    /usr/include/bits/pthreadtypes.h \
+    /usr/include/bits/thread-shared-types.h \
+    /usr/include/bits/pthreadtypes-arch.h \
+    /usr/include/bits/atomic_wide_counter.h \
+    /usr/include/bits/struct_mutex.h \
+    /usr/include/bits/struct_rwlock.h \
+    /usr/include/alloca.h \
+    /usr/include/bits/stdlib-bsearch.h \
+    /usr/include/bits/stdlib-float.h \
+    /usr/include/c++/7/bits/std_abs.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/driver_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/vector_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/vector_functions.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/common_functions.h \
     /usr/include/string.h \
-    /usr/include/bits/types/locale_t.h \
-    /usr/include/bits/types/__locale_t.h \
     /usr/include/strings.h \
     /usr/include/time.h \
     /usr/include/bits/time.h \
-    /usr/include/bits/types.h \
-    /usr/include/bits/typesizes.h \
     /usr/include/bits/timex.h \
-    /usr/include/bits/types/struct_timeval.h \
-    /usr/include/bits/types/clock_t.h \
-    /usr/include/bits/types/time_t.h \
     /usr/include/bits/types/struct_tm.h \
-    /usr/include/bits/types/struct_timespec.h \
-    /usr/include/bits/types/clockid_t.h \
-    /usr/include/bits/types/timer_t.h \
     /usr/include/bits/types/struct_itimerspec.h \
-    /usr/include/c++/8/new \
-    /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
-    /usr/include/c++/8/x86_64-redhat-linux/bits/os_defines.h \
-    /usr/include/c++/8/x86_64-redhat-linux/bits/cpu_defines.h \
-    /usr/include/c++/8/exception \
-    /usr/include/c++/8/bits/exception.h \
-    /usr/include/c++/8/bits/exception_ptr.h \
-    /usr/include/c++/8/bits/exception_defines.h \
-    /usr/include/c++/8/bits/cxxabi_init_exception.h \
-    /usr/include/c++/8/typeinfo \
-    /usr/include/c++/8/bits/hash_bytes.h \
-    /usr/include/c++/8/bits/nested_exception.h \
-    /usr/include/c++/8/bits/move.h \
-    /usr/include/c++/8/bits/concept_check.h \
-    /usr/include/c++/8/type_traits \
+    /usr/include/c++/7/new \
+    /usr/include/c++/7/exception \
+    /usr/include/c++/7/bits/exception.h \
+    /usr/include/c++/7/bits/exception_ptr.h \
+    /usr/include/c++/7/bits/exception_defines.h \
+    /usr/include/c++/7/bits/cxxabi_init_exception.h \
+    /usr/include/c++/7/typeinfo \
+    /usr/include/c++/7/bits/hash_bytes.h \
+    /usr/include/c++/7/bits/nested_exception.h \
+    /usr/include/c++/7/bits/move.h \
+    /usr/include/c++/7/bits/concept_check.h \
+    /usr/include/c++/7/type_traits \
     /usr/include/stdio.h \
-    /usr/lib/gcc/x86_64-redhat-linux/8/include/stdarg.h \
+    /usr/lib64/gcc/x86_64-suse-linux/7/include/stdarg.h \
     /usr/include/bits/types/__fpos_t.h \
     /usr/include/bits/types/__mbstate_t.h \
     /usr/include/bits/types/__fpos64_t.h \
@@ -76,38 +109,13 @@ CMakeFiles/knncuda.dir/gpuknn/knncuda.cu.o : /leonardo/home/userexternal/mrestel
     /usr/include/bits/types/struct_FILE.h \
     /usr/include/bits/types/cookie_io_functions_t.h \
     /usr/include/bits/stdio_lim.h \
-    /usr/include/bits/sys_errlist.h \
     /usr/include/bits/stdio.h \
-    /usr/include/c++/8/stdlib.h \
-    /usr/include/c++/8/cstdlib \
-    /usr/include/stdlib.h \
-    /usr/include/bits/waitflags.h \
-    /usr/include/bits/waitstatus.h \
-    /usr/include/bits/floatn.h \
-    /usr/include/bits/floatn-common.h \
-    /usr/include/sys/types.h \
-    /usr/include/bits/stdint-intn.h \
-    /usr/include/endian.h \
-    /usr/include/bits/endian.h \
-    /usr/include/bits/byteswap.h \
-    /usr/include/bits/uintn-identity.h \
-    /usr/include/sys/select.h \
-    /usr/include/bits/select.h \
-    /usr/include/bits/types/sigset_t.h \
-    /usr/include/bits/types/__sigset_t.h \
-    /usr/include/bits/pthreadtypes.h \
-    /usr/include/bits/thread-shared-types.h \
-    /usr/include/bits/pthreadtypes-arch.h \
-    /usr/include/alloca.h \
-    /usr/include/bits/stdlib-bsearch.h \
-    /usr/include/bits/stdlib-float.h \
-    /usr/include/c++/8/bits/std_abs.h \
     /usr/include/assert.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/math_functions.h \
-    /usr/include/c++/8/math.h \
-    /usr/include/c++/8/cmath \
-    /usr/include/c++/8/bits/cpp_type_traits.h \
-    /usr/include/c++/8/ext/type_traits.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/math_functions.h \
+    /usr/include/c++/7/math.h \
+    /usr/include/c++/7/cmath \
+    /usr/include/c++/7/bits/cpp_type_traits.h \
+    /usr/include/c++/7/ext/type_traits.h \
     /usr/include/math.h \
     /usr/include/bits/math-vector.h \
     /usr/include/bits/libm-simd-decl-stubs.h \
@@ -118,57 +126,57 @@ CMakeFiles/knncuda.dir/gpuknn/knncuda.cu.o : /leonardo/home/userexternal/mrestel
     /usr/include/bits/mathcalls.h \
     /usr/include/bits/mathcalls-narrow.h \
     /usr/include/bits/iscanonical.h \
-    /usr/include/bits/mathinline.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/math_functions.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_surface_types.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_texture_types.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/device_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/device_functions.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/device_atomic_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/device_atomic_functions.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/device_double_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/device_double_functions.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_20_atomic_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_20_atomic_functions.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_32_atomic_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_32_atomic_functions.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_35_atomic_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_60_atomic_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_60_atomic_functions.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_20_intrinsics.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_20_intrinsics.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_30_intrinsics.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_30_intrinsics.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_32_intrinsics.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_32_intrinsics.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_35_intrinsics.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_61_intrinsics.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/sm_61_intrinsics.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/sm_70_rt.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/sm_70_rt.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/sm_80_rt.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/sm_80_rt.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/sm_90_rt.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/sm_90_rt.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/surface_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/texture_fetch_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/texture_indirect_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/surface_indirect_functions.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/crt/cudacc_ext.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/device_launch_parameters.h \
-    /usr/include/c++/8/utility \
-    /usr/include/c++/8/bits/stl_relops.h \
-    /usr/include/c++/8/bits/stl_pair.h \
-    /usr/include/c++/8/initializer_list \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda.h \
-    /usr/lib/gcc/x86_64-redhat-linux/8/include/stdint.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/math_functions.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/device_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/device_functions.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/device_atomic_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/device_atomic_functions.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/device_double_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/device_double_functions.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_20_atomic_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_20_atomic_functions.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_32_atomic_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_32_atomic_functions.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_35_atomic_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_60_atomic_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_60_atomic_functions.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_20_intrinsics.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_20_intrinsics.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_30_intrinsics.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_30_intrinsics.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_32_intrinsics.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_32_intrinsics.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_35_intrinsics.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_61_intrinsics.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/sm_61_intrinsics.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/sm_70_rt.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/sm_70_rt.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/sm_80_rt.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/sm_80_rt.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/sm_90_rt.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/sm_90_rt.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/sm_100_rt.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/sm_100_rt.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/texture_indirect_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/surface_indirect_functions.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/crt/cudacc_ext.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/device_launch_parameters.h \
+    /usr/include/c++/7/utility \
+    /usr/include/c++/7/bits/stl_relops.h \
+    /usr/include/c++/7/bits/stl_pair.h \
+    /usr/include/c++/7/initializer_list \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuda.h \
+    /usr/lib64/gcc/x86_64-suse-linux/7/include/stdint.h \
     /usr/include/stdint.h \
     /usr/include/bits/wchar.h \
     /usr/include/bits/stdint-uintn.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/math_libs/11.8/include/cublas.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/math_libs/11.8/include/cublas_api.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuComplex.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_fp16.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_fp16.hpp \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_bf16.h \
-    /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/nvhpc-24.5-torlmnyzcexnrs6pq4cccabv7ehkv3xy/Linux_x86_64/24.5/cuda/11.8/include/cuda_bf16.hpp
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/math_libs/12.9/include/cublas.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/math_libs/12.9/include/cublas_api.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuComplex.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuda_fp16.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/nv/target \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/nv/detail/__target_macros \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/nv/detail/__preprocessor \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuda_fp16.hpp \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuda_bf16.h \
+    /opt/nvidia/hpc_sdk/Linux_x86_64/25.5/cuda/12.9/targets/x86_64-linux/include/cuda_bf16.hpp

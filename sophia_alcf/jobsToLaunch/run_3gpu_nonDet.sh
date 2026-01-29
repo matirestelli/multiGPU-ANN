@@ -25,7 +25,7 @@ echo "========================================="
 
 # Run full pipeline: build shards + merge with HDD storage
 # Parameters: true = use HDD, 9 = num_shards, 1000000 = num_vectors
-./gknng false 12 1000000
+./gknng false 6 20000000
 
 
 # END TIMER

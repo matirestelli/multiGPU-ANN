@@ -358,7 +358,7 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,int id
   for (int j = i + 1; j < shards_num; j++) { 
 
     std::string label = "Merge GPU " + std::to_string(id_gpu) + ": shard i=" + std::to_string(i) + ": shard j=" + std::to_string(j);
-    nvtxRangePush(label.c_str());
+    // nvtxRangePush(label.c_str());
 
 
     NNDElement *result_knn_graph_dev;
@@ -444,7 +444,7 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,int id
     
         //Espera o atual ser discartado
     if (j == allow_next){
-      nvtxMark("Unlock mutex for next gpu to start");
+      // nvtxMark("Unlock mutex for next gpu to start");
       multi_merge.unlock();
     }
 
@@ -465,7 +465,7 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,int id
     //write_th.detach();
     write_th.join();
 
-    nvtxRangePop();
+    // nvtxRangePop();
   }
 
   //Isso aqui não tem pq ser thread.
@@ -526,7 +526,7 @@ void GenLargeKNNGraph(const string &vecs_data_path, const string &out_data_path,
 
   int iters = num_shards/ NUM_GPU;
 
-  nvtxMark("Building Shards Phase");
+  //// nvtxMark("Building Shards Phase");
   for (int s=0;s<iters;s++){
 
     vector<thread> threads;
@@ -555,7 +555,7 @@ void GenLargeKNNGraph(const string &vecs_data_path, const string &out_data_path,
 
   printf("\nIniciando o merge\n");
 
-  nvtxMark("Start MultiGPU Merge Phase");
+  //// nvtxMark("Start MultiGPU Merge Phase");
 
   Timer merge_timer;
   merge_timer.start();
@@ -581,7 +581,7 @@ void GenLargeKNNGraph(const string &vecs_data_path, const string &out_data_path,
             int gpu_id = i_copy % NUM_GPU;
             std::string range_name = "Merge Phase | gpuID: " + std::to_string(gpu_id) + 
                 " | shard: " + std::to_string(NUM_GPU*s_copy + i_copy);
-            nvtxMark(range_name.c_str());
+            // nvtxMark(range_name.c_str());
 
             MultiMerge(data_manager, out_data_path, i_copy, NUM_GPU*s_copy + i_copy, allow_begin_copy);
         }));

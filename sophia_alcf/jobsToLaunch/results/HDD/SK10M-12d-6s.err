@@ -1,0 +1,61 @@
+10000000 32
+10000000 32
+Start writing thread.............
+Start writing thread.............
+Start writing thread.............
+End writing thread 0 ..............3.25078
+End writing thread 1 ..............3.29565
+End writing thread 2 ..............3.28714
+Start writing thread.............
+Start writing thread.............
+Start writing thread.............
+End writing thread 3 ..............3.4482
+End writing thread 5 ..............3.43558
+End writing thread 4 ..............3.47827
+Building shards costs: 10.19
+Update graph costs: 0.370125
+Update graph costs: 0.371729
+Update graph costs: 0.367669
+Update graph costs: 0.364053
+Update graph costs: 0.381033
+Update graph costs: 0.351177
+Update graph costs: 0.41899
+No. 0 mergers cost: 42.0656
+No. 0 avg. cost: 8.41311
+
+
+Update graph costs: 0.352322
+Update graph costs: 0.386541
+Update graph costs: 0.399495
+No. 1 mergers cost: 33.4093
+No. 1 avg. cost: 8.35232
+
+
+Update graph costs: 0.385886
+Update graph costs: 0.387879
+No. 2 mergers cost: 26.6674
+No. 2 avg. cost: 8.88913
+
+
+Update graph costs: 0.37435
+Update graph costs: 0.377424
+No. 3 mergers cost: 16.8797
+No. 3 avg. cost: 8.43985
+
+
+Update graph costs: 0.341706
+No. 4 mergers cost: 9.01393
+No. 4 avg. cost: 9.01393
+
+
+
+========================================
+TIMING RESULTS (HDD-based version):
+========================================
+Total HDD time: 44.1087 seconds
+Total Building time: 10.19 seconds
+Total Merge time: 101.607 seconds
+Total ANNS time: 115.327 seconds
+========================================
+
+Timing results saved to ../results/10000000_k32_s6.txt

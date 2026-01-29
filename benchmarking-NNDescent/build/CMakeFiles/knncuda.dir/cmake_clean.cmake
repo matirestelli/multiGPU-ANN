@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/knncuda.dir/gpuknn/nndescent.cu.o"
   "CMakeFiles/knncuda.dir/gpuknn/nndescent.cu.o.d"
   "CMakeFiles/knncuda.dir/xmuknn.cpp.o"
+  "CMakeFiles/knncuda.dir/xmuknn.cpp.o.d"
   "libknncuda.a"
   "libknncuda.pdb"
 )

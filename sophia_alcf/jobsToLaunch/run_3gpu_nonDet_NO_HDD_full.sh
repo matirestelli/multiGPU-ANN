@@ -26,7 +26,7 @@ echo "========================================="
 
 # Run full pipeline: build shards + merge in memory (no HDD intermediate storage)
 # Parameters: false = skip TXT->FVEC conversion, 3 = num_shards, 1000000 = num_vectors, full = mode
-./gknng false 30 1000000 full
+./gknng false 6 20000000 full
 
 
 # END TIMER

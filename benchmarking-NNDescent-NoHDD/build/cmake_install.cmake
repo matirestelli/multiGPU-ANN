@@ -1,4 +1,4 @@
-# Install script for directory: /leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/NNDescent-No-HDD
+# Install script for directory: /home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/NNDescent-No-HDD/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

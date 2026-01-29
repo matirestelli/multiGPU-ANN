@@ -1,6 +1,6 @@
 #include <assert.h>
 #include <cuda_profiler_api.h>
-#include <nvToolsExt.h>
+//#include <nvToolsExt.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -50,7 +50,7 @@ void ToTxtResult(const string &kgraph_path, const string &out_path,
 
 void TestConstructLargeKNNGraph(int shards, int n) {
   SetupDbSize(n);
-  string ref_path = "../data/vectors";
+  string ref_path = "../../shared_data/vectors";
 
   string result_path = "../results/NNDescent-KNNG.kgraph";
 
@@ -62,14 +62,14 @@ void TestConstructLargeKNNGraph(int shards, int n) {
   GenLargeKNNGraph(ref_path, result_path, K, shards);
 
   printf("Time cost = %lf \n", timer.end());
-  nvtxMark("Write final result Phase");
+  //nvtxMark("Write final result Phase");
 
   ToTxtResult(result_path, result_path + ".txt", n);
 }
 
 void TestBuildShardsOnly(int shards, long int n) {
   SetupDbSize(n);  // Setup DB size for GPU operations
-  string ref_path = "../data/vectors";
+  string ref_path = "../../shared_data/vectors";
   string result_path = "../results/NNDescent-KNNG.kgraph";
   int K = K_neighbors;
 
@@ -86,7 +86,7 @@ void TestBuildShardsOnly(int shards, long int n) {
 
 void TestMergeShardsOnly(int shards, long int n) {
   SetupDbSize(n);
-  string ref_path = "../data/vectors";
+  string ref_path = "../../shared_data/vectors";
   string result_path = "../results/NNDescent-KNNG.kgraph";
   int K = K_neighbors;
 
@@ -144,7 +144,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (PREPARE) {
-      string base_path = "../data/artificial/SK_data.txt";
+      string base_path = "../../shared_data/artificial/SK_data.txt";
       float *vectors;
       long int vecs_size, vecs_dim;
 
@@ -152,14 +152,14 @@ int main(int argc, char *argv[]) {
       printf("DIM = %ld\n", vecs_dim);
 
       // Arquivo em que será criado o .fvecs que será utilizado
-      string out_path = "../data/vectors.fvecs";
+      string out_path = "../../shared_data/vectors.fvecs";
 
       // Escrita em binário
       FileTool::WriteBinaryVecs(out_path, vectors, vecs_size, vecs_dim);
     } else {
       cudaProfilerStart();
 
-      string ref_path = "../data/vectors";
+      string ref_path = "../../shared_data/vectors";
       string result_path = "../results/NNDescent-KNNG.kgraph";
       int K = K_neighbors;
 

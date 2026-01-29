@@ -1,6 +1,6 @@
 //no hdd version deterministic
 #include <limits.h>  // for PATH_MAX
-#include <nvToolsExt.h>
+//#include <nvToolsExt.h>
 #include <unistd.h>
 #include <unistd.h>  // for getcwd
 #include <iomanip>
@@ -344,10 +344,10 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,
 
   for (int j = i + 1; j < shards_num; j++) {
     // OLD PROFILING: NVTX range with string construction - commented out for performance
-    //std::string label = "Merge GPU " + std::to_string(id_gpu) +
-    //                    ": shard i=" + std::to_string(i) +
-    //                    ": shard j=" + std::to_string(j);
-    //nvtxRangePush(label.c_str());
+    std::string label = "Merge GPU " + std::to_string(id_gpu) +
+                        ": shard i=" + std::to_string(i) +
+                        ": shard j=" + std::to_string(j);
+    // nvtxRangePush(label.c_str());
 
     NNDElement *result_knn_graph_dev = nullptr;
     Timer timer;
@@ -363,7 +363,7 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,
         local_knn_i == nullptr || local_knn_j == nullptr) {
       cerr << "ERROR: MultiMerge - Null pointers for shard data i=" << i 
            << ", j=" << j << endl;
-      //nvtxRangePop();  // OLD PROFILING: commented out for performance
+      // nvtxRangePop();  // OLD PROFILING: commented out for performance
       multi_merge.unlock();
       exit(-1);
     }
@@ -380,7 +380,7 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,
       cerr << "ERROR: MultiMerge - KNNMergeFromHost returned null for shards " 
            << i << " and " << j << endl;
   
-      //nvtxRangePop();  // OLD PROFILING: commented out for performance
+      // nvtxRangePop();  // OLD PROFILING: commented out for performance
       multi_merge.unlock();
       exit(-1);
     }
@@ -400,14 +400,14 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,
       if (result_second == nullptr) {
         cerr << "ERROR: MultiMerge - Failed to get global graph for shard " << j << endl;
         cudaFree(result_knn_graph_dev);
-        //nvtxRangePop();  // OLD PROFILING: commented out for performance
+        // nvtxRangePop();  // OLD PROFILING: commented out for performance
         exit(-1);
       }
     } catch (const exception& e) {
       cerr << "ERROR: MultiMerge - Exception getting global graph for shard " << j 
            << ": " << e.what() << endl;
       cudaFree(result_knn_graph_dev);
-      //nvtxRangePop();  // OLD PROFILING: commented out for performance
+      // nvtxRangePop();  // OLD PROFILING: commented out for performance
       exit(-1);
     }
 
@@ -418,7 +418,7 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,
     if (result_first_dev == nullptr) {
       cerr << "ERROR: MultiMerge - Failed to allocate GPU memory for first graph" << endl;
       cudaFree(result_knn_graph_dev);
-      //nvtxRangePop();  // OLD PROFILING: commented out for performance
+      // nvtxRangePop();  // OLD PROFILING: commented out for performance
       exit(-1);
     }
     
@@ -431,7 +431,7 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,
       cerr << "ERROR: MultiMerge - Failed to allocate GPU memory for second graph" << endl;
       cudaFree(result_first_dev);
       cudaFree(result_knn_graph_dev);
-      //nvtxRangePop();  // OLD PROFILING: commented out for performance
+      // nvtxRangePop();  // OLD PROFILING: commented out for performance
       exit(-1);
     }
     
@@ -484,7 +484,7 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,
     //  cudaFree(result_first_dev);
     //  cudaFree(result_second_dev);
     //  cudaFree(result_knn_graph_dev);
-    //  nvtxRangePop();
+    //  // nvtxRangePop();
     //  exit(-1);
     //}
     
@@ -509,13 +509,13 @@ void MultiMerge(KNNDataManager &data_manager, const string &out_data_path,
     
     // Espera o atual ser discartado
     if (j == allow_next) {
-      //nvtxMark("Unlock mutex for next gpu to start");  // OLD PROFILING: commented out for performance
+      // nvtxMark("Unlock mutex for next gpu to start");  // OLD PROFILING: commented out for performance
       multi_merge.unlock();
     }
     
 
 
-    //nvtxRangePop();  // OLD PROFILING: commented out for performance
+    // // nvtxRangePop();  // OLD PROFILING: commented out for performance
   }
 
   // Store the final merged result_first back in the data manager
@@ -672,10 +672,10 @@ void MergeShardsOnly(const string &vecs_data_path, const string &out_data_path,
             thread([&data_manager, out_data_path, s, i, allow_begin, shard_id]() {
               int gpu_id = i % NUM_GPU;
               // OLD PROFILING: NVTX mark with string construction - commented out for performance
-              //std::string range_name =
-              //    "Merge Phase | gpuID: " + std::to_string(gpu_id) +
-              //    " | shard: " + std::to_string(shard_id);
-              //nvtxMark(range_name.c_str());
+              std::string range_name =
+                  "Merge Phase | gpuID: " + std::to_string(gpu_id) +
+                  " | shard: " + std::to_string(shard_id);
+              // nvtxMark(range_name.c_str());
 
               MultiMerge(data_manager, out_data_path, i, shard_id, allow_begin);
             }));
@@ -719,7 +719,7 @@ void GenLargeKNNGraph(const string &vecs_data_path, const string &out_data_path,
   Timer knn_timer;
   knn_timer.start();
 
-  nvtxMark("Building Shards Phase");
+  // nvtxMark("Building Shards Phase");
   
   for (int s = 0; s < iters; s++) {
     vector<thread> threads;
@@ -745,7 +745,7 @@ void GenLargeKNNGraph(const string &vecs_data_path, const string &out_data_path,
   sleep(2);
 
   printf("\nIniciando o merge\n");
-  nvtxMark("Start MultiGPU Merge Phase");
+  // nvtxMark("Start MultiGPU Merge Phase");
 
   Timer merge_timer;
   merge_timer.start();
@@ -765,10 +765,10 @@ void GenLargeKNNGraph(const string &vecs_data_path, const string &out_data_path,
             thread([&data_manager, out_data_path, s, i, allow_begin, shard_id]() {
               int gpu_id = i % NUM_GPU;
               // OLD PROFILING: NVTX mark with string construction - commented out for performance
-              //std::string range_name =
-              //    "Merge Phase | gpuID: " + std::to_string(gpu_id) +
-              //    " | shard: " + std::to_string(shard_id);
-              //nvtxMark(range_name.c_str());
+              std::string range_name =
+                  "Merge Phase | gpuID: " + std::to_string(gpu_id) +
+                  " | shard: " + std::to_string(shard_id);
+              // nvtxMark(range_name.c_str());
 
               MultiMerge(data_manager, out_data_path, i, shard_id, allow_begin);
             }));

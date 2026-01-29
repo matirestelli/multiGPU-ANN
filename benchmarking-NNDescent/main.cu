@@ -22,7 +22,7 @@
 #include "xmuknn.h"
 
 
-#include <nvToolsExt.h>
+//#include <nvToolsExt.h>
 #include <cuda_profiler_api.h>
 
 using namespace std;
@@ -57,7 +57,7 @@ void ToTxtResult(const string &kgraph_path, const string &out_path, long int n) 
 void TestConstructLargeKNNGraph(int shards,int n) {
 
 
-  string ref_path = "../data/vectors";
+  string ref_path = "../../shared_data/vectors";
 
   string result_path = "../results/NNDescent-KNNG.kgraph";
 
@@ -71,7 +71,7 @@ void TestConstructLargeKNNGraph(int shards,int n) {
 
 
   printf("Time cost = %lf \n",timer.end());
-  nvtxMark("Write final result Phase");
+  //nvtxMark("Write final result Phase");
 
   ToTxtResult(result_path,result_path + ".txt",n);
 
@@ -121,7 +121,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (PREPARE) {
-      string base_path = "../data/artificial/SK_data.txt";
+      string base_path = "../../shared_data/artificial/SK_data.txt";
       float *vectors;
       long int vecs_size, vecs_dim;
 
@@ -129,7 +129,7 @@ int main(int argc, char *argv[]) {
       printf("DIM = %ld\n", vecs_dim);
 
       // Arquivo em que será criado o .fvecs que será utilizado
-      string out_path = "../data/vectors.fvecs";
+      string out_path = "../../shared_data/vectors.fvecs";
 
       // Escrita em binário
       FileTool::WriteBinaryVecs(out_path, vectors, vecs_size, vecs_dim);

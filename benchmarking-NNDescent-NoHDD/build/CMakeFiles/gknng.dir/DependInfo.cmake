@@ -8,12 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/NNDescent-No-HDD/main.cu" "CMakeFiles/gknng.dir/main.cu.o" "gcc" "CMakeFiles/gknng.dir/main.cu.o.d"
+  "/home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD/main.cu" "CMakeFiles/gknng.dir/main.cu.o" "gcc" "CMakeFiles/gknng.dir/main.cu.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/leonardo/home/userexternal/mrestel1/hpps25-NNdescentNCCL/multigpu-ann/Scalable-distributed-algorithms-for-approximating-the-kNNG/experiments/Scenario_1/NNDescent-No-HDD/build/CMakeFiles/knncuda.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
