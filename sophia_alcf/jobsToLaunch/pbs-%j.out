@@ -1,0 +1,632 @@
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ Cray MPICH loaded successfully
+Environment setup complete!
+=========================================
+Starting PROFILING NO-HDD execution with NVIDIA Nsight
+Starting execution at: Fri Jan 30 07:46:37 AM UTC 2026
+=========================================
+SHARDS SET TO 9.
+N SET TO 1000000.
+MODE SET TO full.
+Setting up db_size = 1000000
+GPU 0: db_size = 1000000
+GPU 1: db_size = 1000000
+GPU 2: db_size = 1000000
+Loading data from: ../../shared_data/vectors.fvecs
+Loading all vector data into memory (parallel mode)...
+Loading shard 0: position=0, count=111111
+Loading shard Loading shard Loading shard Loading shard 4: position=444444, count=111111
+1: position=111111, count=111111
+Loading shard 5: position=555555, count=111111
+Loading shard 6: position=666666, count=111111
+Loading shard 7: position=777777, count=111111
+3: position=333333, count=111111
+Loading shard 2: position=222222, count=111111
+8: position=888888, count=111112
+Successfully loaded shard 8
+Successfully loaded shard 7
+Successfully loaded shard 6
+Successfully loaded shard 5
+Successfully loaded shard 4
+Successfully loaded shard 3
+Successfully loaded shard 2
+Successfully loaded shard 1
+Successfully loaded shard 0
+All vector data loaded successfully (parallel)
+Successfully loaded 1000000 vectors of dimension 12 into 9 shards
+Data path: ../../shared_data/vectors
+Total vecs num: 1000000
+Shards num: 9
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 111111
+Vecs num. of last shard: 111112
+Vector data loaded for 9 shards
+Local KNN graphs stored for 0 shards
+Global KNN graphs stored for 0 shards
+-> 1000000
+Iniciou?GPU 0 is activated
+GPU GPU 2 is activated
+1 is activated
+Building No. 0
+Building No. 1
+Building No. 2
+End building No.1 in 0.163784 seconds
+Stored local KNN graph for shard 1
+Stored global KNN graph for shard 1
+End building No.2 in 0.172585 seconds
+Stored local KNN graph for shard 2
+Stored global KNN graph for shard 2
+End building No.0 in 0.182285 seconds
+Stored local KNN graph for shard 0
+Stored global KNN graph for shard 0
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 3
+Building No. 4
+Building No. 5
+End building No.4 in 0.132105 seconds
+End building No.3 in 0.135552 seconds
+Stored local KNN graph for shard 4
+Stored global KNN graph for shard 4
+Stored local KNN graph for shard 3
+Stored global KNN graph for shard 3
+End building No.5 in 0.167602 seconds
+Stored local KNN graph for shard 5
+Stored global KNN graph for shard 5
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 6
+Building No. 8
+Building No. 7
+End building No.7 in 0.133774 seconds
+End building No.8 in 0.134259 seconds
+Stored local KNN graph for shard 8
+Stored global KNN graph for shard 8
+Stored local KNN graph for shard 7
+Stored global KNN graph for shard 7
+End building No.6 in 0.145816 seconds
+Stored local KNN graph for shard 6
+Stored global KNN graph for shard 6
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 22954939094784 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 0.60432
+Merge costs: J = 2 I = 0 0.63341
+Merge costs: J = 3 I = 0 0.592477
+Shard 1 foi ativado e ira comecar
+END para 1 -> 22954936993536 
+
+Shard 1 foi read e ira comecar
+Merge costs: J = 4 I = 0 0.585061
+Merge costs: J = 2 I = 1 0.573451
+Merge costs: J = 5 I = 0 0.563286
+Merge costs: J = 3 I = 1 0.524182
+Merge costs: J = 6 I = 0 0.537263
+Merge costs: J = 4 I = 1 0.497713
+Shard 2 foi ativado e ira comecar
+END para 2 -> 22954922317568 
+
+Shard 2 foi read e ira comecar
+Merge costs: J = 5 I = 1 0.488014
+Merge costs: J = 7 I = 0 0.586339
+Merge costs: J = 6 I = 1 0.467572
+Merge costs: J = 3 I = 2 0.621473
+Merge costs: J = 8 I = 0 0.561676
+Merge costs: J = 7 I = 1 0.517411
+Merge costs: J = 4 I = 2 0.56603
+Merge costs: J = 8 I = 1 0.490503
+Merge costs: J = 5 I = 2 0.554009
+Merge costs: J = 6 I = 2 0.527727
+Merge costs: J = 7 I = 2 0.565045
+Merge costs: J = 8 I = 2 0.545634
+Shard 3 foi ativado e ira comecar
+END para 3 -> 22954922317568 
+
+Shard 3 foi read e ira comecar
+Merge costs: J = 4 I = 3 0.580386
+Merge costs: J = 5 I = 3 0.527383
+Merge costs: J = 6 I = 3 0.5061
+Shard 4 foi ativado e ira comecar
+END para 4 -> 22954936993536 
+
+Shard 4 foi read e ira comecar
+Merge costs: J = 7 I = 3 0.533733
+Merge costs: J = 5 I = 4 0.567203
+Merge costs: J = 8 I = 3 0.516324
+Merge costs: J = 6 I = 4 0.505256
+Merge costs: J = 7 I = 4 0.521517
+Shard 5 foi ativado e ira comecar
+END para 5 -> 22954939094784 
+
+Shard 5 foi read e ira comecar
+Merge costs: J = 8 I = 4 0.503188
+Merge costs: J = 6 I = 5 0.515556
+Merge costs: J = 7 I = 5 0.519361
+Merge costs: J = 8 I = 5 0.491267
+Shard 6 foi ativado e ira comecar
+END para 6 -> 22954939094784 
+
+Shard 6 foi read e ira comecar
+Merge costs: J = 7 I = 6 0.519881
+Merge costs: J = 8 I = 6 0.471545
+Iniciando o último merge
+Shard 7 foi ativado e ira comecar
+END para 7 -> 140732790447968 
+
+Shard 7 foi read e ira comecar
+Merge costs: J = 8 I = 7 0.564308
+Writing final merged KNN graphs to disk...
+Writing all global KNN graphs to file: ../results/NNDescent-KNNG.kgraph
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Writing shard 0 to position 0 with 111111 vectors
+Writing shard 1 to position 111111 with 111111 vectors
+Writing shard 2 to position 222222 with 111111 vectors
+Writing shard 3 to position 333333 with 111111 vectors
+Writing shard 4 to position 444444 with 111111 vectors
+Writing shard 5 to position 555555 with 111111 vectors
+Writing shard 6 to position 666666 with 111111 vectors
+Writing shard 7 to position 777777 with 111111 vectors
+Writing shard 8 to position 888888 with 111112 vectors
+Successfully wrote all global KNN graphs to file
+Final merged graphs written to: ../results/NNDescent-KNNG.kgraph
+Time cost = 27.999460 
+Collecting data...
+Generating '/dev/shm/nsys-report-105d.qdstrm'
+[1/8] [0%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [0%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [9%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [8%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [7%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [6%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [5%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [5%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [6%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [7%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [8%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [9%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [10%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [11%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [12%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [13%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [14%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=15%                        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=16%                        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=17%                        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==18%                       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==19%                       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==20%                       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==21%                       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===22%                      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===23%                      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===24%                      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [====25%                     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [====26%                     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [====27%                     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [====28%                     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=====29%                    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=====30%                    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=====31%                    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=====32%                    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [======33%                   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [======34%                   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [======35%                   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=======36%                  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=======37%                  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=======38%                  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=======39%                  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========40%                 ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========41%                 ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========42%                 ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=========43%                ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=========44%                ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=========45%                ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=========46%                ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==========47%               ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==========48%               ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==========49%               ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===========50%              ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===========51%              ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===========52%              ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===========53%              ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========================100%] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========================100%] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep
+[2/8] [0%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [1%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [2%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [3%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [4%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [5%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [6%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [7%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [8%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [9%                          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [10%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [11%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [12%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [13%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [14%                         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=15%                        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=16%                        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=17%                        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==18%                       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==19%                       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==20%                       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==21%                       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===22%                      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===23%                      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===24%                      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====25%                     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====26%                     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====27%                     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====28%                     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====29%                    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====30%                    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====31%                    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====32%                    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======33%                   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======34%                   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======35%                   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======36%                  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======37%                  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======38%                  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======39%                  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========40%                 ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========41%                 ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========42%                 ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=========43%                ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=========44%                ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=========45%                ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=========46%                ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==========47%               ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==========48%               ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==========49%               ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===========50%              ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===========51%              ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===========52%              ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===========53%              ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [============54%             ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [============55%             ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [============56%             ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [============57%             ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=============58%            ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=============59%            ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=============60%            ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==============61%           ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==============62%           ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==============63%           ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==============64%           ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===============65%          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===============66%          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===============67%          ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [================68%         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [================69%         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [================70%         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [================71%         ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=================72%        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=================73%        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=================74%        ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==================75%       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==================76%       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==================77%       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==================78%       ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===================79%      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===================80%      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===================81%      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===================82%      ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====================83%     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====================84%     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====================85%     ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====================86%    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====================87%    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====================88%    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====================89%    ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======================90%   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======================91%   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======================92%   ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======================93%  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======================94%  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======================95%  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======================96%  ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================97% ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================98% ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================99% ] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================100%] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================100%] nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite
+[3/8] Executing 'nvtx_sum' stats report
+[4/8] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls     Avg (ns)         Med (ns)        Min (ns)       Max (ns)       StdDev (ns)             Name         
+ --------  ---------------  ---------  ---------------  ---------------  -------------  -------------  ---------------  ----------------------
+     69.4  106,801,843,159      1,106     96,565,861.8    100,132,103.0          1,463    150,874,445     17,842,498.6  poll                  
+     14.3   22,001,537,982         20  1,100,076,899.1  1,000,084,331.5  1,000,035,013  2,000,101,276    307,797,789.4  sleep                 
+      9.5   14,635,739,631     44,714        327,319.0          2,514.0          1,001     10,067,435        941,828.8  fread                 
+      4.2    6,486,807,242          8    810,850,905.3    373,448,812.0     32,181,046  2,971,484,651  1,044,077,716.5  pthread_join          
+      1.6    2,486,897,917  1,000,045          2,486.8          1,803.0          1,733      7,913,284         20,629.1  write                 
+      0.5      761,065,581      7,941         95,840.0         21,641.0          1,032     32,338,762        695,328.9  ioctl                 
+      0.4      602,960,936     32,318         18,657.1         18,394.0          1,002        110,167          2,764.5  fwrite                
+      0.0       38,827,006          1     38,827,006.0     38,827,006.0     38,827,006     38,827,006              0.0  system                
+      0.0       15,804,842        115        137,433.4         10,500.0          6,061      4,080,745        648,801.4  mmap64                
+      0.0       14,108,226          3      4,702,742.0          6,443.0          2,936     14,098,847      8,137,265.8  pipe2                 
+      0.0        8,224,345         98         83,921.9          2,445.0          1,092      1,187,083        235,638.8  fclose                
+      0.0        8,172,821         39        209,559.5         12,123.0          1,974      3,808,664        830,063.7  mmap                  
+      0.0        7,563,389         79         95,739.1          5,811.0          2,205      2,473,151        340,400.7  fopen                 
+      0.0        6,376,967         30        212,565.6        219,728.5        112,562        356,781         50,411.6  pthread_create        
+      0.0        6,075,347         19        319,755.1         24,386.0          7,434        878,733        341,322.2  fopen64               
+      0.0        4,952,188         39        126,979.2         72,616.0         22,983        834,309        198,445.1  sem_timedwait         
+      0.0        4,020,295         46         87,397.7         71,675.0          1,463        263,676         63,272.2  pthread_mutex_lock    
+      0.0        3,726,118          1      3,726,118.0      3,726,118.0      3,726,118      3,726,118              0.0  fsync                 
+      0.0        3,199,857         10        319,985.7        133,070.0         16,901      1,450,638        459,921.9  pthread_rwlock_rdlock 
+      0.0        1,899,904          8        237,488.0          6,702.5          2,955      1,492,588        523,190.4  open                  
+      0.0        1,328,659          1      1,328,659.0      1,328,659.0      1,328,659      1,328,659              0.0  fallocate             
+      0.0        1,150,956        174          6,614.7          5,785.5          3,306         27,472          2,801.8  open64                
+      0.0        1,030,518         46         22,402.6          2,775.0          1,323        900,143        132,310.3  read                  
+      0.0          646,476         24         26,936.5          2,119.0          1,062        309,913         82,384.4  close                 
+      0.0          621,782        128          4,857.7          4,924.5          1,011         12,473          2,432.6  fflush                
+      0.0          601,232         60         10,020.5          8,861.5          2,615         77,606          9,102.3  fgets                 
+      0.0          374,193         83          4,508.3          4,388.0          1,573          7,144            780.0  fileno                
+      0.0          187,582          1        187,582.0        187,582.0        187,582        187,582              0.0  pthread_cond_wait     
+      0.0          182,492          7         26,070.3         30,337.0          1,322         75,252         27,298.0  pthread_rwlock_wrlock 
+      0.0          104,958         11          9,541.6          5,230.0          3,497         49,813         13,440.8  munmap                
+      0.0           81,632          4         20,408.0         20,097.5          1,793         39,644         21,438.4  stat                  
+      0.0           73,650         10          7,365.0          6,697.5          5,671         11,833          1,986.4  getline               
+      0.0           47,064         39          1,206.8          1,122.0          1,031          2,976            310.4  putc                  
+      0.0           16,040          1         16,040.0         16,040.0         16,040         16,040              0.0  fstat                 
+      0.0           15,209          2          7,604.5          7,604.5          5,360          9,849          3,174.2  socket                
+      0.0           10,410          1         10,410.0         10,410.0         10,410         10,410              0.0  connect               
+      0.0            9,519          7          1,359.9          1,463.0          1,012          1,543            236.8  fcntl                 
+      0.0            4,689          1          4,689.0          4,689.0          4,689          4,689              0.0  pthread_cond_broadcast
+      0.0            1,794          1          1,794.0          1,794.0          1,794          1,794              0.0  bind                  
+      0.0            1,303          1          1,303.0          1,303.0          1,303          1,303              0.0  getentropy            
+
+[5/8] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)            Name         
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  ------------  ----------------------
+     94.9   20,223,472,824      2,088    9,685,571.3      442,447.0       87,775  266,960,930  32,225,805.8  cudaDeviceSynchronize 
+      2.5      541,985,930        306    1,771,195.8    1,638,757.0      307,247    4,347,437     924,760.4  cudaMemcpy            
+      0.9      199,824,569          1  199,824,569.0  199,824,569.0  199,824,569  199,824,569           0.0  cudaProfilerStart     
+      0.6      123,468,901      1,926       64,106.4        5,545.5          110    2,882,321     123,567.2  cudaMalloc            
+      0.5       99,151,521      1,854       53,479.8        7,044.0        4,278    3,073,200      95,812.0  cudaFree              
+      0.3       55,578,334      5,364       10,361.4        3,517.0        2,755    8,294,100     188,575.7  cudaLaunchKernel      
+      0.1       24,424,873      1,800       13,569.4       12,518.5       11,141       36,108       2,585.9  cudaMemcpyAsync       
+      0.1       12,997,928      2,250        5,776.9        3,647.0        2,875       18,925       2,991.9  cudaMemset            
+      0.0       10,386,264      2,700        3,846.8        1,052.0          831       16,651       4,079.5  cudaStreamSynchronize 
+      0.0        9,036,546          3    3,012,182.0    2,983,271.0    2,526,562    3,526,713     500,701.9  cudaMemcpyToSymbol    
+      0.0        1,566,726          1    1,566,726.0    1,566,726.0    1,566,726    1,566,726           0.0  cudaProfilerStop      
+      0.0              992          1          992.0          992.0          992          992           0.0  cuModuleGetLoadingMode
+
+[6/8] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)    StdDev (ns)                                                   Name                                                
+ --------  ---------------  ---------  ------------  ------------  ----------  -----------  ------------  ----------------------------------------------------------------------------------------------------
+     90.0   18,201,060,641        396  45,962,274.3  22,170,018.0  10,119,398  266,741,532  61,246,008.2  TiledNewOldNeighborsCompareKernelForMerge(NNDElement *, int *, const float *, const int *, const in…
+      3.2      649,190,932         54  12,022,054.3  10,138,380.5   4,665,825   29,597,967   5,762,174.8  NewNeighborsCompareKernel(NNDElement *, int *, const float *, const int *, const int *, int)        
+      2.5      509,869,973         54   9,442,036.5   4,232,933.0   2,332,594   37,666,914  10,451,883.5  TiledNewOldNeighborsCompareKernel(NNDElement *, int *, const float *, const int *, const int *, int…
+      1.3      254,361,928        396     642,328.1     462,797.5     409,949    2,281,299     434,419.2  ShrinkGraphForMerge(int *, int *, int *, int *, int *, int *)                                       
+      1.2      232,876,392        396     588,071.7     440,397.5     277,407    2,322,135     423,276.4  PrepareReverseGraphForMerge(int *, int *, int *, int *, int *, int *, int)                          
+      0.4       84,323,347         45   1,873,852.2   1,961,496.0     977,339    2,457,680     439,914.8  InitKNNGraphDistanceKernel(NNDElement *, int, const float *)                                        
+      0.4       78,669,929        522     150,708.7     167,263.5      84,864      215,135      34,250.8  MarkAllToOld(NNDElement *)                                                                          
+      0.3       67,132,494        396     169,526.5     167,552.0     167,295      217,022       9,368.8  PrepareGraphForMerge(int *, int *, int *, int *, NNDElement *, int, int)                            
+      0.3       61,580,048         72     855,278.4     855,995.0     846,875      858,107       2,986.3  UpdateKNNGraphKernel(NNDElement *, const NNDElement *, int)                                         
+      0.1       29,704,796         54     550,088.8     431,053.0     315,550    1,284,697     280,040.5  ShrinkGraph(int *, int *, int *, int *, int *, int *)                                               
+      0.1       14,524,297         54     268,968.5     278,686.5     107,424      446,877     104,135.7  PrepareReverseGraph(int *, int *, int *, int *, int *, int *)                                       
+      0.0        8,893,360         45     197,630.2     205,440.0     104,735      261,214      46,106.6  SortEachBlockKernel(NNDElement *, int)                                                              
+      0.0        7,845,527         36     217,931.3     205,614.5     205,247      261,951      23,424.7  InitRandomBlockedKNNGraph(NNDElement *, const NNDElement *, int, const NNDElement *, int)           
+      0.0        6,816,831         45     151,485.1     167,359.0      85,088      167,775      32,351.8  MergeBlocksKernel(NNDElement *, int)                                                                
+      0.0        6,028,544         36     167,459.6     167,423.0     166,943      167,903         190.8  PreProcIDKernel(NNDElement *, int, int, int, int, int)                                              
+      0.0        5,169,443         54      95,730.4      86,095.5      84,991      111,455      11,575.1  PrepareGraph(int *, int *, int *, int *, NNDElement *, int)                                         
+      0.0        4,137,954        900       4,597.7       4,512.0       4,160        6,304         380.3  void thrust::THRUST_200802_SM_800_NS::cuda_cub::core::_kernel_agent<thrust::THRUST_200802_SM_800_NS…
+      0.0        2,793,425        900       3,103.8       3,072.0       2,272        4,288         260.3  void thrust::THRUST_200802_SM_800_NS::cuda_cub::core::_kernel_agent<thrust::THRUST_200802_SM_800_NS…
+      0.0        1,556,663        900       1,729.6       1,728.0       1,312        2,656         286.4  void thrust::THRUST_200802_SM_800_NS::cuda_cub::core::_kernel_agent<thrust::THRUST_200802_SM_800_NS…
+      0.0          860,380          9      95,597.8      86,112.0      85,312      108,927      11,765.4  InitKNNGraphIndexKernel(NNDElement *, int, const unsigned long long *)                              
+
+[7/8] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  -----------  -----------  --------  ---------  -----------  ----------------------------
+     68.7      331,969,764    228  1,456,007.7  1,402,424.0     2,112  3,791,881    954,407.1  [CUDA memcpy Host-to-Device]
+     30.2      146,035,487  1,881     77,637.2      1,952.0     1,696  4,092,944    365,294.5  [CUDA memcpy Device-to-Host]
+      1.1        5,332,228  2,250      2,369.9      2,272.0     1,920      3,616        309.3  [CUDA memset]               
+
+[8/8] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+  4,528.000    228    19.860    28.444     0.000    28.445       11.281  [CUDA memcpy Host-to-Device]
+  2,304.018  1,881     1.225     0.000     0.000    28.445        5.776  [CUDA memcpy Device-to-Host]
+  1,880.000  2,250     0.836     0.889     0.444     0.889        0.144  [CUDA memset]               
+
+Generated:
+	/home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD/build/nsys-traces/nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep
+	/home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD/build/nsys-traces/nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite
+=========================================
+Execution finished at: Fri Jan 30 07:47:28 AM UTC 2026
+Total time elapsed: 0 minutes 51 seconds
+Profiling output saved to: nsys-traces/nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep
+=========================================
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ Cray MPICH loaded successfully
+Environment setup complete!
+=========================================
+Starting PROFILING NO-HDD execution with NVIDIA Nsight
+Starting execution at: Fri Jan 30 07:57:06 AM UTC 2026
+=========================================
+SHARDS SET TO 9.
+N SET TO 1000000.
+MODE SET TO full.
+Setting up db_size = 1000000
+GPU 0: db_size = 1000000
+GPU 1: db_size = 1000000
+GPU 2: db_size = 1000000
+Loading data from: ../../shared_data/vectors.fvecs
+Loading all vector data into memory (parallel mode)...
+Loading shard 0: position=0, count=111111
+Loading shard 1: position=111111, count=111111
+Loading shard 2: position=222222, count=111111
+Loading shard Loading shard 5: position=555555, count=111111
+Loading shard 6: position=666666, count=111111
+Loading shard 4: position=444444, count=111111
+Loading shard 8: position=888888, count=111112
+3: position=333333, count=111111
+Loading shard 7: position=777777, count=111111
+Successfully loaded shard 8
+Successfully loaded shard 7
+Successfully loaded shard 6
+Successfully loaded shard 5
+Successfully loaded shard 4
+Successfully loaded shard 3
+Successfully loaded shard 2
+Successfully loaded shard 1
+Successfully loaded shard 0
+All vector data loaded successfully (parallel)
+Successfully loaded 1000000 vectors of dimension 12 into 9 shards
+Data path: ../../shared_data/vectors
+Total vecs num: 1000000
+Shards num: 9
+Max vecs num. per shard: 10000000
+Vecs num. per shard: 111111
+Vecs num. of last shard: 111112
+Vector data loaded for 9 shards
+Local KNN graphs stored for 0 shards
+Global KNN graphs stored for 0 shards
+-> 1000000
+Iniciou?GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 0
+Building No. 1
+Building No. 2
+End building No.0 in 0.184934 seconds
+End building No.1 in 0.185416 seconds
+Stored local KNN graph for shard 0
+Stored global KNN graph for shard 0
+Stored local KNN graph for shard 1
+Stored global KNN graph for shard 1
+End building No.2 in 0.209657 seconds
+Stored local KNN graph for shard 2
+Stored global KNN graph for shard 2
+GPU 0 is activated
+GPU 1 is activated
+GPU 2 is activated
+Building No. 5
+Building No. 3
+Building No. 4
+End building No.3 in 0.139137 seconds
+Stored local KNN graph for shard 3
+Stored global KNN graph for shard 3
+End building No.5 in 0.152548 seconds
+Stored local KNN graph for shard 5
+Stored global KNN graph for shard 5
+End building No.4 in 0.167836 seconds
+Stored local KNN graph for shard 4
+Stored global KNN graph for shard 4
+GPU GPU GPU 2 is activated
+1 is activated
+0 is activated
+Building No. 7
+Building No. 6
+Building No. 8
+End building No.7 in 0.152717 seconds
+End building No.8 in 0.155238 seconds
+Stored local KNN graph for shard 7
+Stored global KNN graph for shard 7
+Stored local KNN graph for shard 8
+Stored global KNN graph for shard 8
+End building No.6 in 0.169237 seconds
+Stored local KNN graph for shard 6
+Stored global KNN graph for shard 6
+
+Iniciando o merge
+Shard 0 foi ativado e ira comecar
+END para 0 -> 23214415517440 
+
+Shard 0 foi read e ira comecar
+Merge costs: J = 1 I = 0 0.630107
+Merge costs: J = 2 I = 0 0.734311
+Merge costs: J = 3 I = 0 0.652494
+Shard 1 foi ativado e ira comecar
+END para 1 -> 23214413416192 
+
+Shard 1 foi read e ira comecar
+Merge costs: J = 2 I = 1 0.643499
+Merge costs: J = 4 I = 0 0.667614
+Merge costs: J = 3 I = 1 0.546467
+Merge costs: J = 5 I = 0 0.605046
+Merge costs: J = 4 I = 1 0.565229
+Merge costs: J = 6 I = 0 0.618626
+Shard 2 foi ativado e ira comecar
+END para 2 -> 23214398740224 
+
+Shard 2 foi read e ira comecar
+Merge costs: J = 5 I = 1 0.500465
+Merge costs: J = 7 I = 0 0.660029
+Merge costs: J = 3 I = 2 0.751898
+Merge costs: J = 6 I = 1 0.511152
+Merge costs: J = 8 I = 0 0.628561
+Merge costs: J = 7 I = 1 0.555479
+Merge costs: J = 4 I = 2 0.707819
+Merge costs: J = 8 I = 1 0.524113
+Merge costs: J = 5 I = 2 0.630085
+Merge costs: J = 6 I = 2 0.669303
+Merge costs: J = 7 I = 2 0.71914
+Merge costs: J = 8 I = 2 0.691843
+Shard 3 foi ativado e ira comecar
+END para 3 -> 23214398740224 
+
+Shard 3 foi read e ira comecar
+Merge costs: J = 4 I = 3 0.669501
+Merge costs: J = 5 I = 3 0.560494
+Merge costs: J = 6 I = 3 0.568057
+Shard 4 foi ativado e ira comecar
+END para 4 -> 23214413416192 
+
+Shard 4 foi read e ira comecar
+Merge costs: J = 7 I = 3 0.589774
+Merge costs: J = 5 I = 4 0.616183
+Merge costs: J = 8 I = 3 0.579882
+Merge costs: J = 6 I = 4 0.606641
+Merge costs: J = 7 I = 4 0.642296
+Shard 5 foi ativado e ira comecar
+END para 5 -> 23214415517440 
+
+Shard 5 foi read e ira comecar
+Merge costs: J = 8 I = 4 0.606442
+Merge costs: J = 6 I = 5 0.576092
+Merge costs: J = 7 I = 5 0.559595
+Merge costs: J = 8 I = 5 0.537367
+Shard 6 foi ativado e ira comecar
+END para 6 -> 23214415517440 
+
+Shard 6 foi read e ira comecar
+Merge costs: J = 7 I = 6 0.620254
+Merge costs: J = 8 I = 6 0.560976
+Iniciando o último merge
+Shard 7 foi ativado e ira comecar
+END para 7 -> 140730355200160 
+
+Shard 7 foi read e ira comecar
+Merge costs: J = 8 I = 7 0.648866
+Writing final merged KNN graphs to disk...
+Writing all global KNN graphs to file: ../results/NNDescent-KNNG.kgraph
+Na hora de criar o grafo: NUM: 1000000 e DIM = 32
+SIZET = 264000000
+Writing shard 0 to position 0 with 111111 vectors
+Writing shard 1 to position 111111 with 111111 vectors
+Writing shard 2 to position 222222 with 111111 vectors
+Writing shard 3 to position 333333 with 111111 vectors
+Writing shard 4 to position 444444 with 111111 vectors
+Writing shard 5 to position 555555 with 111111 vectors
+Writing shard 6 to position 666666 with 111111 vectors
+Writing shard 7 to position 777777 with 111111 vectors
+Writing shard 8 to position 888888 with 111112 vectors
+Successfully wrote all global KNN graphs to file
+Final merged graphs written to: ../results/NNDescent-KNNG.kgraph
+Time cost = 28.789864 
+Collecting data...
+Generating '/dev/shm/nsys-report-2f09.qdstrm'
+[1/8] [0%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [0%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [9%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [8%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [9%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [8%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [7%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [6%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [5%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [5%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [6%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [7%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [8%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [9%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [10%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [11%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [12%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [13%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [14%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=15%                        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=16%                        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=17%                        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==18%                       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==19%                       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==20%                       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==21%                       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===22%                      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===23%                      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===24%                      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [====25%                     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [====26%                     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [====27%                     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [====28%                     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=====29%                    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=====30%                    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=====31%                    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=====32%                    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [======33%                   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [======34%                   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [======35%                   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=======36%                  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=======37%                  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=======38%                  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=======39%                  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========40%                 ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========41%                 ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========42%                 ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=========43%                ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=========44%                ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=========45%                ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [=========46%                ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==========47%               ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==========48%               ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [==========49%               ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===========50%              ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===========51%              ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===========52%              ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [===========53%              ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========================100%] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep[1/8] [========================100%] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep
+[2/8] [0%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [1%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [2%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [3%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [4%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [5%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [6%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [7%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [8%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [9%                          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [10%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [11%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [12%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [13%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [14%                         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=15%                        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=16%                        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=17%                        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==18%                       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==19%                       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==20%                       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==21%                       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===22%                      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===23%                      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===24%                      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====25%                     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====26%                     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====27%                     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====28%                     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====29%                    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====30%                    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====31%                    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====32%                    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======33%                   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======34%                   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======35%                   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======36%                  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======37%                  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======38%                  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======39%                  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========40%                 ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========41%                 ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========42%                 ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=========43%                ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=========44%                ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=========45%                ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=========46%                ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==========47%               ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==========48%               ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==========49%               ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===========50%              ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===========51%              ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===========52%              ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===========53%              ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [============54%             ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [============55%             ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [============56%             ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [============57%             ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=============58%            ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=============59%            ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=============60%            ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==============61%           ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==============62%           ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==============63%           ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==============64%           ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===============65%          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===============66%          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===============67%          ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [================68%         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [================69%         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [================70%         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [================71%         ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=================72%        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=================73%        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=================74%        ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==================75%       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==================76%       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==================77%       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [==================78%       ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===================79%      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===================80%      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===================81%      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [===================82%      ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====================83%     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====================84%     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [====================85%     ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====================86%    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====================87%    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====================88%    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=====================89%    ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======================90%   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======================91%   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [======================92%   ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======================93%  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======================94%  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======================95%  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [=======================96%  ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================97% ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================98% ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================99% ] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================100%] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite[2/8] [========================100%] nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite
+[3/8] Executing 'nvtx_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)   Style                 Range               
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  -----------  -------  ----------------------------------
+      3.4      761,611,159          1  761,611,159.0  761,611,159.0  761,611,159  761,611,159          0.0  PushPop  :Merge GPU 2: shard i=2: shard j=3
+      3.3      745,090,516          1  745,090,516.0  745,090,516.0  745,090,516  745,090,516          0.0  PushPop  :Merge GPU 0: shard i=0: shard j=2
+      3.2      728,758,777          1  728,758,777.0  728,758,777.0  728,758,777  728,758,777          0.0  PushPop  :Merge GPU 2: shard i=2: shard j=7
+      3.2      717,438,283          1  717,438,283.0  717,438,283.0  717,438,283  717,438,283          0.0  PushPop  :Merge GPU 2: shard i=2: shard j=4
+      3.1      701,457,805          1  701,457,805.0  701,457,805.0  701,457,805  701,457,805          0.0  PushPop  :Merge GPU 2: shard i=2: shard j=8
+      3.0      679,010,579          1  679,010,579.0  679,010,579.0  679,010,579  679,010,579          0.0  PushPop  :Merge GPU 2: shard i=2: shard j=6
+      3.0      678,886,074          1  678,886,074.0  678,886,074.0  678,886,074  678,886,074          0.0  PushPop  :Merge GPU 0: shard i=3: shard j=4
+      3.0      678,044,564          1  678,044,564.0  678,044,564.0  678,044,564  678,044,564          0.0  PushPop  :Merge GPU 0: shard i=0: shard j=4
+      3.0      670,937,044          1  670,937,044.0  670,937,044.0  670,937,044  670,937,044          0.0  PushPop  :Merge GPU 0: shard i=0: shard j=7
+      2.9      662,971,430          1  662,971,430.0  662,971,430.0  662,971,430  662,971,430          0.0  PushPop  :Merge GPU 0: shard i=0: shard j=3
+      2.9      658,566,306          1  658,566,306.0  658,566,306.0  658,566,306  658,566,306          0.0  PushPop  :Merge GPU 2: shard i=7: shard j=8
+      2.9      652,998,247          1  652,998,247.0  652,998,247.0  652,998,247  652,998,247          0.0  PushPop  :Merge GPU 1: shard i=1: shard j=2
+      2.9      651,717,841          1  651,717,841.0  651,717,841.0  651,717,841  651,717,841          0.0  PushPop  :Merge GPU 1: shard i=4: shard j=7
+      2.8      641,100,658          1  641,100,658.0  641,100,658.0  641,100,658  641,100,658          0.0  PushPop  :Merge GPU 0: shard i=0: shard j=8
+      2.8      640,869,694          1  640,869,694.0  640,869,694.0  640,869,694  640,869,694          0.0  PushPop  :Merge GPU 0: shard i=0: shard j=1
+      2.8      639,716,677          1  639,716,677.0  639,716,677.0  639,716,677  639,716,677          0.0  PushPop  :Merge GPU 2: shard i=2: shard j=5
+      2.8      629,682,088          1  629,682,088.0  629,682,088.0  629,682,088  629,682,088          0.0  PushPop  :Merge GPU 0: shard i=6: shard j=7
+      2.8      629,282,768          1  629,282,768.0  629,282,768.0  629,282,768  629,282,768          0.0  PushPop  :Merge GPU 0: shard i=0: shard j=6
+      2.8      625,557,601          1  625,557,601.0  625,557,601.0  625,557,601  625,557,601          0.0  PushPop  :Merge GPU 1: shard i=4: shard j=5
+      2.7      616,019,023          1  616,019,023.0  616,019,023.0  616,019,023  616,019,023          0.0  PushPop  :Merge GPU 1: shard i=4: shard j=6
+      2.7      615,963,368          1  615,963,368.0  615,963,368.0  615,963,368  615,963,368          0.0  PushPop  :Merge GPU 1: shard i=4: shard j=8
+      2.7      615,928,112          1  615,928,112.0  615,928,112.0  615,928,112  615,928,112          0.0  PushPop  :Merge GPU 0: shard i=0: shard j=5
+      2.7      599,174,312          1  599,174,312.0  599,174,312.0  599,174,312  599,174,312          0.0  PushPop  :Merge GPU 0: shard i=3: shard j=7
+      2.6      591,193,049          1  591,193,049.0  591,193,049.0  591,193,049  591,193,049          0.0  PushPop  :Merge GPU 0: shard i=3: shard j=8
+      2.6      585,782,165          1  585,782,165.0  585,782,165.0  585,782,165  585,782,165          0.0  PushPop  :Merge GPU 2: shard i=5: shard j=6
+      2.6      577,487,204          1  577,487,204.0  577,487,204.0  577,487,204  577,487,204          0.0  PushPop  :Merge GPU 0: shard i=3: shard j=6
+      2.6      574,669,781          1  574,669,781.0  574,669,781.0  574,669,781  574,669,781          0.0  PushPop  :Merge GPU 1: shard i=1: shard j=4
+      2.5      572,264,322          1  572,264,322.0  572,264,322.0  572,264,322  572,264,322          0.0  PushPop  :Merge GPU 0: shard i=6: shard j=8
+      2.5      569,861,870          1  569,861,870.0  569,861,870.0  569,861,870  569,861,870          0.0  PushPop  :Merge GPU 0: shard i=3: shard j=5
+      2.5      569,234,201          1  569,234,201.0  569,234,201.0  569,234,201  569,234,201          0.0  PushPop  :Merge GPU 2: shard i=5: shard j=7
+      2.5      564,964,801          1  564,964,801.0  564,964,801.0  564,964,801  564,964,801          0.0  PushPop  :Merge GPU 1: shard i=1: shard j=7
+      2.5      555,930,811          1  555,930,811.0  555,930,811.0  555,930,811  555,930,811          0.0  PushPop  :Merge GPU 1: shard i=1: shard j=3
+      2.4      546,949,401          1  546,949,401.0  546,949,401.0  546,949,401  546,949,401          0.0  PushPop  :Merge GPU 2: shard i=5: shard j=8
+      2.4      533,579,054          1  533,579,054.0  533,579,054.0  533,579,054  533,579,054          0.0  PushPop  :Merge GPU 1: shard i=1: shard j=8
+      2.3      520,632,485          1  520,632,485.0  520,632,485.0  520,632,485  520,632,485          0.0  PushPop  :Merge GPU 1: shard i=1: shard j=6
+      2.3      509,906,126          1  509,906,126.0  509,906,126.0  509,906,126  509,906,126          0.0  PushPop  :Merge GPU 1: shard i=1: shard j=5
+      0.0        5,188,322        900        5,764.8        5,490.5        4,849      100,499      3,348.8  PushPop  CCCL:cub::DeviceFor::Bulk         
+
+[4/8] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls     Avg (ns)         Med (ns)        Min (ns)       Max (ns)      StdDev (ns)            Name         
+ --------  ---------------  ---------  ---------------  ---------------  -------------  -------------  -------------  ----------------------
+     70.2  109,808,459,203      1,136     96,662,376.1    100,151,318.0          2,365    147,879,823   17,583,197.2  poll                  
+     14.1   22,001,997,627         20  1,100,099,881.3  1,000,101,507.5  1,000,080,728  2,000,108,578  307,796,022.5  sleep                 
+      8.5   13,350,497,243     44,768        298,215.2          2,635.0          1,002     11,802,400      863,804.8  fread                 
+      4.6    7,198,055,887         11    654,368,717.0    192,343,475.0      1,892,435  2,691,801,049  938,178,956.0  pthread_join          
+      1.6    2,475,680,872  1,000,045          2,475.6          1,793.0          1,703      5,398,921       21,188.7  write                 
+      0.5      738,240,015      7,947         92,895.4         21,360.0          1,002     31,252,686      676,591.8  ioctl                 
+      0.4      598,348,477     32,232         18,563.8         18,384.0          1,002         66,245        2,275.9  fwrite                
+      0.0       55,672,339         45      1,237,163.1         67,477.0          9,989     48,321,198    7,194,504.9  pthread_mutex_lock    
+      0.0       34,981,671          1     34,981,671.0     34,981,671.0     34,981,671     34,981,671            0.0  system                
+      0.0       15,402,378        115        133,933.7          9,969.0          5,911      3,982,130      634,845.3  mmap64                
+      0.0       14,157,854          3      4,719,284.7          6,602.0          3,577     14,147,675    8,165,225.7  pipe2                 
+      0.0       10,268,026         79        129,975.0          5,841.0          2,144      3,348,910      499,374.2  fopen                 
+      0.0        9,572,591         98         97,679.5          2,615.0          1,102      1,070,441      266,809.3  fclose                
+      0.0        6,776,171         19        356,640.6         23,985.0          7,525        922,252      381,151.8  fopen64               
+      0.0        6,422,135         30        214,071.2        207,550.0        139,733        336,041       44,353.5  pthread_create        
+      0.0        4,558,854         39        116,893.7         11,672.0          1,953      3,834,382      611,763.7  mmap                  
+      0.0        4,251,829         39        109,021.3         71,684.0         38,753        813,838      149,237.4  sem_timedwait         
+      0.0        1,633,729          1      1,633,729.0      1,633,729.0      1,633,729      1,633,729            0.0  fallocate             
+      0.0        1,405,452          8        175,681.5          6,672.5          2,906        818,628      322,562.2  open                  
+      0.0        1,099,464        174          6,318.8          5,711.0          3,256         20,889        1,974.7  open64                
+      0.0        1,069,252         46         23,244.6          2,725.0          1,312        957,589      140,824.6  read                  
+      0.0          953,140          1        953,140.0        953,140.0        953,140        953,140            0.0  fsync                 
+      0.0          804,142         19         42,323.3          2,175.0          1,253        511,170      126,993.9  close                 
+      0.0          626,781        126          4,974.5          4,914.0          1,162         11,641        2,346.2  fflush                
+      0.0          626,282         61         10,266.9          9,247.0          5,209         68,850        7,874.7  fgets                 
+      0.0          315,682         75          4,209.1          4,127.0          1,883          6,682        1,009.5  fileno                
+      0.0          205,626          1        205,626.0        205,626.0        205,626        205,626            0.0  pthread_cond_wait     
+      0.0          158,360          8         19,795.0         16,125.5          1,203         74,811       24,360.5  pthread_rwlock_rdlock 
+      0.0          133,950         11         12,177.3         13,976.0          1,183         32,100       11,457.6  pthread_rwlock_wrlock 
+      0.0          112,281         11         10,207.4          5,901.0          3,707         50,115       13,480.6  munmap                
+      0.0          112,120         10         11,212.0         10,500.0          5,590         24,345        5,505.3  getline               
+      0.0           81,994          4         20,498.5         19,882.0          1,894         40,336       21,467.8  stat                  
+      0.0           47,491         40          1,187.3          1,152.0          1,022          2,395          208.1  putc                  
+      0.0           20,398          7          2,914.0          1,473.0          1,052         12,353        4,172.2  fcntl                 
+      0.0           14,567          2          7,283.5          7,283.5          4,779          9,788        3,541.9  socket                
+      0.0           12,283          1         12,283.0         12,283.0         12,283         12,283            0.0  fstat                 
+      0.0           12,283          1         12,283.0         12,283.0         12,283         12,283            0.0  connect               
+      0.0            4,970          1          4,970.0          4,970.0          4,970          4,970            0.0  pthread_cond_broadcast
+      0.0            1,744          1          1,744.0          1,744.0          1,744          1,744            0.0  bind                  
+      0.0            1,012          1          1,012.0          1,012.0          1,012          1,012            0.0  getentropy            
+
+[5/8] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)            Name         
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  ------------  ----------------------
+     95.6   23,081,825,377      2,088   11,054,514.1      481,364.5       88,767  268,622,310  33,472,600.2  cudaDeviceSynchronize 
+      2.2      543,402,915        306    1,775,826.5    1,617,944.0      307,137    4,503,039     924,040.3  cudaMemcpy            
+      0.8      193,810,190          1  193,810,190.0  193,810,190.0  193,810,190  193,810,190           0.0  cudaProfilerStart     
+      0.5      117,081,734      2,826       41,430.2        4,569.0          110    1,005,338      67,929.6  cudaMalloc            
+      0.4       98,098,228      2,754       35,620.3        5,721.0        3,627      836,231      48,605.6  cudaFree              
+      0.2       53,978,130      6,264        8,617.2        3,507.0        2,755    8,129,110     163,368.1  cudaLaunchKernel      
+      0.1       24,691,125      1,800       13,717.3       12,814.0       10,950       45,826       2,526.8  cudaMemcpyAsync       
+      0.1       15,723,769      3,600        4,367.7        2,038.5          842       16,621       3,659.1  cudaStreamSynchronize 
+      0.1       12,946,684      2,250        5,754.1        3,577.0        2,855       21,059       3,126.2  cudaMemset            
+      0.0        8,772,228          3    2,924,076.0    2,941,134.0    2,410,268    3,420,826     505,494.9  cudaMemcpyToSymbol    
+      0.0        1,512,051          1    1,512,051.0    1,512,051.0    1,512,051    1,512,051           0.0  cudaProfilerStop      
+      0.0              852          1          852.0          852.0          852          852           0.0  cuModuleGetLoadingMode
+
+[6/8] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)    StdDev (ns)                                                   Name                                                
+ --------  ---------------  ---------  ------------  ------------  ----------  -----------  ------------  ----------------------------------------------------------------------------------------------------
+     90.4   20,856,120,810        396  52,666,971.7  30,307,802.0  12,416,629  268,403,045  60,245,824.4  TiledNewOldNeighborsCompareKernelForMerge(NNDElement *, int *, const float *, const int *, const in…
+      3.1      708,778,577         54  13,125,529.2  11,149,564.5   5,791,071   37,014,785   7,056,857.9  NewNeighborsCompareKernel(NNDElement *, int *, const float *, const int *, const int *, int)        
+      2.6      597,198,128         54  11,059,224.6   4,275,686.0   2,330,246   50,661,293  13,328,912.9  TiledNewOldNeighborsCompareKernel(NNDElement *, int *, const float *, const int *, const int *, int…
+      1.2      277,043,916        396     699,605.8     567,163.5     346,046    2,361,009     408,311.1  PrepareReverseGraphForMerge(int *, int *, int *, int *, int *, int *, int)                          
+      1.1      259,822,807        396     656,118.2     476,780.0     417,821    2,278,002     435,905.3  ShrinkGraphForMerge(int *, int *, int *, int *, int *, int *)                                       
+      0.4       83,826,135         45   1,862,803.0   1,945,867.0     977,813    2,443,633     433,776.0  InitKNNGraphDistanceKernel(NNDElement *, int, const float *)                                        
+      0.3       78,634,856        522     150,641.5     167,294.0      84,896      215,167      34,446.0  MarkAllToOld(NNDElement *)                                                                          
+      0.3       67,161,310        396     169,599.3     167,646.0     167,359      217,247       9,492.8  PrepareGraphForMerge(int *, int *, int *, int *, NNDElement *, int, int)                            
+      0.3       61,579,687         72     855,273.4     855,734.5     846,870      863,546       3,332.7  UpdateKNNGraphKernel(NNDElement *, const NNDElement *, int)                                         
+      0.1       31,933,383         54     591,358.9     502,954.0     315,582    1,290,264     269,919.8  ShrinkGraph(int *, int *, int *, int *, int *, int *)                                               
+      0.1       14,062,482         54     260,416.3     232,430.5     106,720      505,085     108,445.9  PrepareReverseGraph(int *, int *, int *, int *, int *, int *)                                       
+      0.0        8,893,622         45     197,636.0     205,119.0     104,607      262,270      46,055.7  SortEachBlockKernel(NNDElement *, int)                                                              
+      0.0        7,856,030         36     218,223.1     205,886.5     205,278      262,910      23,414.8  InitRandomBlockedKNNGraph(NNDElement *, const NNDElement *, int, const NNDElement *, int)           
+      0.0        6,866,407         45     152,586.8     167,359.0      85,119      167,743      30,443.1  MergeBlocksKernel(NNDElement *, int)                                                                
+      0.0        6,028,494         36     167,458.2     167,423.0     166,911      167,871         189.3  PreProcIDKernel(NNDElement *, int, int, int, int, int)                                              
+      0.0        5,122,518         54      94,861.4      85,391.0      84,960      111,840      12,045.6  PrepareGraph(int *, int *, int *, int *, NNDElement *, int)                                         
+      0.0        4,064,127        900       4,515.7       4,416.0       4,159        6,176         355.0  void thrust::THRUST_200500_800_NS::cuda_cub::core::_kernel_agent<thrust::THRUST_200500_800_NS::cuda…
+      0.0        2,755,083        900       3,061.2       3,008.0       2,272        4,288         248.3  void thrust::THRUST_200500_800_NS::cuda_cub::core::_kernel_agent<thrust::THRUST_200500_800_NS::cuda…
+      0.0        1,796,016        900       1,995.6       1,920.0       1,600        2,816         173.5  void cub::CUB_200500_800_NS::detail::for_each::static_kernel<cub::CUB_200500_800_NS::detail::for_ea…
+      0.0        1,583,093        900       1,759.0       1,760.0       1,344        2,816         273.1  void thrust::THRUST_200500_800_NS::cuda_cub::core::_kernel_agent<thrust::THRUST_200500_800_NS::cuda…
+      0.0          864,121          9      96,013.4      85,760.0      85,376      109,791      12,414.0  InitKNNGraphIndexKernel(NNDElement *, int, const unsigned long long *)                              
+
+[7/8] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  -----------  -----------  --------  ---------  -----------  ----------------------------
+     69.3      336,543,408    228  1,476,067.6  1,403,776.5     2,144  4,172,594    957,178.5  [CUDA memcpy Host-to-Device]
+     29.6      143,441,045  1,881     76,257.9      1,920.0     1,696  3,450,009    359,951.5  [CUDA memcpy Device-to-Host]
+      1.1        5,306,227  2,250      2,358.3      2,272.0     1,920      3,552        304.5  [CUDA memset]               
+
+[8/8] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+  4,528.000    228    19.860    28.444     0.000    28.445       11.281  [CUDA memcpy Host-to-Device]
+  2,304.018  1,881     1.225     0.000     0.000    28.445        5.776  [CUDA memcpy Device-to-Host]
+  1,880.000  2,250     0.836     0.889     0.444     0.889        0.144  [CUDA memset]               
+
+Generated:
+	/home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD/build/nsys-traces/nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep
+	/home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD/build/nsys-traces/nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite
+=========================================
+Execution finished at: Fri Jan 30 07:57:59 AM UTC 2026
+Total time elapsed: 0 minutes 53 seconds
+Profiling output saved to: nsys-traces/nsys_output_6879539.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.nsys-rep
+=========================================

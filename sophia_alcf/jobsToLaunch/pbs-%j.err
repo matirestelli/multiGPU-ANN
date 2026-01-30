@@ -1,0 +1,165 @@
+Building shards costs: 0.524004
+Update graph costs: 0.01058
+Update graph costs: 0.010797
+Update graph costs: 0.010529
+Update graph costs: 0.01066
+Update graph costs: 0.009575
+Update graph costs: 0.010665
+Update graph costs: 0.010149
+Update graph costs: 0.010963
+Update graph costs: 0.009554
+Update graph costs: 0.009522
+Update graph costs: 0.011276
+Update graph costs: 0.01067
+Update graph costs: 0.009619
+Update graph costs: 0.010731
+No. 0 mergers cost: 4.75021
+No. 0 avg. cost: 0.593776
+
+
+Update graph costs: 0.009566
+Update graph costs: 0.009526
+Update graph costs: 0.009671
+No. 1 mergers cost: 3.6277
+No. 1 avg. cost: 0.518242
+
+
+Update graph costs: 0.009542
+Update graph costs: 0.009541
+Update graph costs: 0.009557
+Update graph costs: 0.009606
+No. 2 mergers cost: 3.43744
+No. 2 avg. cost: 0.572906
+
+
+Update graph costs: 0.009704
+Update graph costs: 0.009566
+Update graph costs: 0.009537
+Update graph costs: 0.010341
+Update graph costs: 0.009579
+Update graph costs: 0.009592
+No. 3 mergers cost: 2.71278
+No. 3 avg. cost: 0.542556
+
+
+Update graph costs: 0.012121
+Update graph costs: 0.009398
+Update graph costs: 0.009548
+No. 4 mergers cost: 2.13792
+No. 4 avg. cost: 0.534479
+
+
+Update graph costs: 0.009439
+Update graph costs: 0.009596
+Update graph costs: 0.009417
+No. 5 mergers cost: 1.55471
+No. 5 avg. cost: 0.518236
+
+
+Update graph costs: 0.009879
+Update graph costs: 0.009487
+No. 6 mergers cost: 1.01084
+No. 6 avg. cost: 0.50542
+
+
+Update graph costs: 0.009653
+No. 7 mergers cost: 0.573994
+No. 7 avg. cost: 0.573994
+
+
+1000000 32
+Total time cost: 25.0144 seconds
+
+========================================
+TIMING RESULTS (No-HDD version):
+========================================
+Total HDD time: 0 seconds
+Total Building time: 0.524004 seconds
+Total Merge time: 21.5705 seconds
+Total ANNS time: 25.0144 seconds
+========================================
+
+Timing results saved to ../results/1000000_k32_s9_NoHDD.txt
+SKIPPED: /home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD/build/nsys-traces/nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite does not contain NV Tools Extension (NVTX) data.
+Building shards costs: 0.57643
+Update graph costs: 0.010733
+Update graph costs: 0.010757
+Update graph costs: 0.010453
+Update graph costs: 0.009471
+Update graph costs: 0.01041
+Update graph costs: 0.009444
+Update graph costs: 0.010862
+Update graph costs: 0.009419
+Update graph costs: 0.010639
+Update graph costs: 0.009423
+Update graph costs: 0.01089
+Update graph costs: 0.009679
+Update graph costs: 0.009451
+Update graph costs: 0.012521
+No. 0 mergers cost: 5.28425
+No. 0 avg. cost: 0.660532
+
+
+Update graph costs: 0.009466
+Update graph costs: 0.009598
+Update graph costs: 0.009447
+No. 1 mergers cost: 3.9127
+No. 1 avg. cost: 0.558958
+
+
+Update graph costs: 0.009611
+Update graph costs: 0.00969
+Update graph costs: 0.0096
+Update graph costs: 0.009597
+No. 2 mergers cost: 4.22801
+No. 2 avg. cost: 0.704669
+
+
+Update graph costs: 0.009354
+Update graph costs: 0.00935
+Update graph costs: 0.009413
+Update graph costs: 0.009382
+Update graph costs: 0.009348
+Update graph costs: 0.011293
+No. 3 mergers cost: 3.01662
+No. 3 avg. cost: 0.603324
+
+
+Update graph costs: 0.00936
+Update graph costs: 0.009404
+Update graph costs: 0.009504
+No. 4 mergers cost: 2.50927
+No. 4 avg. cost: 0.627317
+
+
+Update graph costs: 0.009663
+Update graph costs: 0.009619
+Update graph costs: 0.009563
+No. 5 mergers cost: 1.70197
+No. 5 avg. cost: 0.567325
+
+
+Update graph costs: 0.009401
+Update graph costs: 0.011264
+No. 6 mergers cost: 1.20196
+No. 6 avg. cost: 0.600978
+
+
+Update graph costs: 0.00967
+No. 7 mergers cost: 0.658576
+No. 7 avg. cost: 0.658576
+
+
+1000000 32
+Total time cost: 26.0849 seconds
+
+========================================
+TIMING RESULTS (No-HDD version):
+========================================
+Total HDD time: 0 seconds
+Total Building time: 0.57643 seconds
+Total Merge time: 22.5943 seconds
+Total ANNS time: 26.0849 seconds
+========================================
+
+Timing results saved to ../results/1000000_k32_s9_NoHDD.txt
