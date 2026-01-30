@@ -18,12 +18,11 @@ core.*
 *.kgraph
 *.bin
 *.fvec
-data/
-shared_data/vectors.fvecs
+shared_data/
+*.txt
 
 # Results (keep structure but not large files)
 results/*.kgraph*
-results/*.txt
 
 # IDE
 .vscode/

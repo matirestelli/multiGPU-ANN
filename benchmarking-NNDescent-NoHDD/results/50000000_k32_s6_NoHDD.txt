@@ -1,0 +1,4 @@
+Total HDD time: 0 seconds
+Total Building time: 12.90 seconds
+Total Merge time: 305.00 seconds
+Total ANNS time: 340.00 seconds

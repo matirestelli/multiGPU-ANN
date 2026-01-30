@@ -8,6 +8,7 @@ set(CUDA_ROOT "/soft/compilers/cudatoolkit/cuda-12.6.0")
 set(CUDART_LIBRARY "${CUDA_ROOT}/lib64/libcudart.so")
 set(CURAND_LIBRARY "${CUDA_ROOT}/lib64/libcurand.so")
 set(CUBLAS_LIBRARY "${CUDA_ROOT}/lib64/libcublas.so")
+set(NVTX_LIBRARY "${CUDA_ROOT}/lib64/libnvToolsExt.so")
 
 # GPU library
 add_library(knncuda STATIC
@@ -52,6 +53,7 @@ target_link_libraries(gknng
     ${CUDART_LIBRARY}
     ${CURAND_LIBRARY}
     ${CUBLAS_LIBRARY}
+    ${NVTX_LIBRARY}
     -lrt -lpthread -ldl 
 )
 
@@ -69,5 +71,6 @@ target_link_libraries(generate_dummy_knn
     ${CUDART_LIBRARY}
     ${CURAND_LIBRARY}
     ${CUBLAS_LIBRARY}
+    ${NVTX_LIBRARY}
     -lrt -lpthread -ldl
 )
