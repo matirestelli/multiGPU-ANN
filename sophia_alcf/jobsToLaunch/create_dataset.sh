@@ -18,7 +18,7 @@ cd $HOME/multiGPU-ANN/shared_data/artificial
 
 # Create dataset: 20 million vectors, 12 dimensions
 echo "Creating dataset: 20,000,000 vectors with 12 dimensions..."
-python3 create.py 20000000 12
+python3 create.py 1000000 12
 
 if [ $? -eq 0 ]; then
     echo "Dataset creation (SK_data.txt) completed successfully!"

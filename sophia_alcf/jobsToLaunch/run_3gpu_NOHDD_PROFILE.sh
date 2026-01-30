@@ -1,8 +1,8 @@
 #!/bin/bash
 #PBS -A UIC-HPC
-#PBS -q by-gpu
-#PBS -l select=1:ngpus=4
-#PBS -l walltime=02:00:00
+#PBS -q debug-scaling
+#PBS -l select=1:ngpus=3
+#PBS -l walltime=00:45:00
 #PBS -l filesystems=home
 #PBS -e pbs-%j.err
 #PBS -o pbs-%j.out
@@ -34,7 +34,7 @@ nsys profile \
 --trace=cuda,nvtx,osrt \
 --force-overwrite=true \
 --stop-on-exit=true \
-./gknng false 3 1000000
+./gknng false 9 1000000
 
 # END TIMER
 END_TIME=$(date +%s)

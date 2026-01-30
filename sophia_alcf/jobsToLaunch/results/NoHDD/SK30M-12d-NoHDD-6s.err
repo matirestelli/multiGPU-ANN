@@ -1,0 +1,52 @@
+Building shards costs: 7.82988
+Update graph costs: 0.458552
+Update graph costs: 0.457933
+Update graph costs: 0.510706
+Update graph costs: 0.457859
+Update graph costs: 0.480214
+Update graph costs: 0.457836
+No. 0 mergers cost: 80.8275
+No. 0 avg. cost: 16.1655
+
+
+Update graph costs: 0.458049
+Update graph costs: 0.479407
+Update graph costs: 0.605902
+No. 1 mergers cost: 66.2867
+No. 1 avg. cost: 16.5717
+
+
+Update graph costs: 0.614902
+Update graph costs: 0.407272
+Update graph costs: 0.407239
+No. 2 mergers cost: 47.1213
+No. 2 avg. cost: 15.7071
+
+
+Update graph costs: 0.458779
+Update graph costs: 0.458893
+No. 3 mergers cost: 32.4559
+No. 3 avg. cost: 16.2279
+
+
+Update graph costs: 0.405077
+No. 4 mergers cost: 15.1216
+No. 4 avg. cost: 15.1216
+
+
+30000000 32
+Total time cost: 223.888 seconds
+
+========================================
+TIMING RESULTS (No-HDD version):
+========================================
+Total HDD time: 0 seconds
+Total Building time: 7.82988 seconds
+Total Merge time: 195.746 seconds
+Total ANNS time: 223.888 seconds
+========================================
+
+Timing results saved to ../results/30000000_k32_s6_NoHDD.txt
+/var/spool/pbs/mom_priv/jobs/6879319.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.SC: line 39: echo: write error: Disk quota exceeded
+/var/spool/pbs/mom_priv/jobs/6879319.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.SC: line 40: echo: write error: Disk quota exceeded
+/var/spool/pbs/mom_priv/jobs/6879319.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.SC: line 41: echo: write error: Disk quota exceeded

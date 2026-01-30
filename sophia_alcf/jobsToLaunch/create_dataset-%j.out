@@ -1,0 +1,13 @@
+✓ CUDA toolkit loaded successfully
+nvcc: NVIDIA (R) Cuda compiler driver
+✓ Cray MPICH loaded successfully
+Environment setup complete!
+Creating dataset: 20,000,000 vectors with 12 dimensions...
+Dataset creation (SK_data.txt) completed successfully!
+-rw-r--r-- 1 mrest users 385M Jan 30 07:13 SK_data.txt
+Converting to binary fvecs format...
+PREPARE SET TO true. Running will be initiated.
+12000000 deu bom?
+DIM = 12
+Binary conversion completed successfully!
+-rw-r--r-- 1 mrest users 50M Jan 30 07:14 /home/mrest/multiGPU-ANN/shared_data/vectors.fvecs

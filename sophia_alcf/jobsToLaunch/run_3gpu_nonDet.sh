@@ -2,7 +2,7 @@
 #PBS -A UIC-HPC
 #PBS -q debug-scaling
 #PBS -l select=1:ngpus=3
-#PBS -l walltime=00:15:00
+#PBS -l walltime=00:45:00
 #PBS -l filesystems=home
 #PBS -e pbs-%j.err
 #PBS -o pbs-%j.out
@@ -25,7 +25,7 @@ echo "========================================="
 
 # Run full pipeline: build shards + merge with HDD storage
 # Parameters: true = use HDD, 9 = num_shards, 1000000 = num_vectors
-./gknng false 6 20000000
+./gknng false 3 40000000
 
 
 # END TIMER

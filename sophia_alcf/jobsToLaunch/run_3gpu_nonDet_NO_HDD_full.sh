@@ -2,7 +2,7 @@
 #PBS -A UIC-HPC
 #PBS -q debug-scaling
 #PBS -l select=1:ngpus=3
-#PBS -l walltime=00:15:00
+#PBS -l walltime=00:25:00
 #PBS -l filesystems=home
 #PBS -e pbs-%j.err
 #PBS -o pbs-%j.out
@@ -26,7 +26,7 @@ echo "========================================="
 
 # Run full pipeline: build shards + merge in memory (no HDD intermediate storage)
 # Parameters: false = skip TXT->FVEC conversion, 3 = num_shards, 1000000 = num_vectors, full = mode
-./gknng false 6 20000000 full
+./gknng false 3 30000000 full
 
 
 # END TIMER

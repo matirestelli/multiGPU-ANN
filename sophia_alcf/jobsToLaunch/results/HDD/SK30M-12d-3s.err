@@ -1,0 +1,31 @@
+30000000 32
+30000000 32
+Start writing thread.............
+Start writing thread.............
+Start writing thread.............
+End writing thread 2 ..............19.7033
+End writing thread 0 ..............20.1718
+End writing thread 1 ..............20.656
+Building shards costs: 28.9564
+Update graph costs: 2.10436
+Update graph costs: 2.13163
+No. 0 mergers cost: 81.7804
+No. 0 avg. cost: 40.8902
+
+
+Update graph costs: 2.0194
+No. 1 mergers cost: 43.2348
+No. 1 avg. cost: 43.2348
+
+
+
+========================================
+TIMING RESULTS (HDD-based version):
+========================================
+Total HDD time: 92.1427 seconds
+Total Building time: 28.9564 seconds
+Total Merge time: 126.016 seconds
+Total ANNS time: 157.023 seconds
+========================================
+
+Timing results saved to ../results/30000000_k32_s3.txt
