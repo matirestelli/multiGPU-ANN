@@ -1,165 +1,195 @@
-Building shards costs: 0.524004
-Update graph costs: 0.01058
-Update graph costs: 0.010797
-Update graph costs: 0.010529
-Update graph costs: 0.01066
-Update graph costs: 0.009575
-Update graph costs: 0.010665
-Update graph costs: 0.010149
-Update graph costs: 0.010963
-Update graph costs: 0.009554
-Update graph costs: 0.009522
-Update graph costs: 0.011276
-Update graph costs: 0.01067
-Update graph costs: 0.009619
-Update graph costs: 0.010731
-No. 0 mergers cost: 4.75021
-No. 0 avg. cost: 0.593776
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/9.0.1"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cray-mpich/9.0.1"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
 
 
-Update graph costs: 0.009566
-Update graph costs: 0.009526
-Update graph costs: 0.009671
-No. 1 mergers cost: 3.6277
-No. 1 avg. cost: 0.518242
+
+10000000 32
+10000000 32
+Start writing thread.............
+Start writing thread.............
+Start writing thread.............
+End writing thread 0 ..............2.97078
+End writing thread 2 ..............3.18384
+End writing thread 1 ..............3.23898
+Start writing thread.............
+Start writing thread.............
+Start writing thread.............
+End writing thread 3 ..............3.28437
+End writing thread 4 ..............3.30033
+End writing thread 5 ..............3.44977
+Building shards costs: 10.0474
+Update graph costs: 0.361689
+Update graph costs: 0.355444
+Update graph costs: 0.352246
+Update graph costs: 0.354216
+Update graph costs: 0.345527
+Update graph costs: 0.350054
+Update graph costs: 0.379089
+No. 0 mergers cost: 41.677
+No. 0 avg. cost: 8.33541
 
 
-Update graph costs: 0.009542
-Update graph costs: 0.009541
-Update graph costs: 0.009557
-Update graph costs: 0.009606
-No. 2 mergers cost: 3.43744
-No. 2 avg. cost: 0.572906
+Update graph costs: 0.335982
+Update graph costs: 0.346543
+Update graph costs: 0.355238
+No. 1 mergers cost: 33.7922
+No. 1 avg. cost: 8.44805
 
 
-Update graph costs: 0.009704
-Update graph costs: 0.009566
-Update graph costs: 0.009537
-Update graph costs: 0.010341
-Update graph costs: 0.009579
-Update graph costs: 0.009592
-No. 3 mergers cost: 2.71278
-No. 3 avg. cost: 0.542556
+Update graph costs: 0.324741
+Update graph costs: 0.321963
+No. 2 mergers cost: 26.0539
+No. 2 avg. cost: 8.68463
 
 
-Update graph costs: 0.012121
-Update graph costs: 0.009398
-Update graph costs: 0.009548
-No. 4 mergers cost: 2.13792
-No. 4 avg. cost: 0.534479
+Update graph costs: 0.355533
+Update graph costs: 0.355119
+No. 3 mergers cost: 16.6307
+No. 3 avg. cost: 8.31537
 
 
-Update graph costs: 0.009439
-Update graph costs: 0.009596
-Update graph costs: 0.009417
-No. 5 mergers cost: 1.55471
-No. 5 avg. cost: 0.518236
+Update graph costs: 0.316171
+No. 4 mergers cost: 8.95219
+No. 4 avg. cost: 8.95219
 
 
-Update graph costs: 0.009879
-Update graph costs: 0.009487
-No. 6 mergers cost: 1.01084
-No. 6 avg. cost: 0.50542
-
-
-Update graph costs: 0.009653
-No. 7 mergers cost: 0.573994
-No. 7 avg. cost: 0.573994
-
-
-1000000 32
-Total time cost: 25.0144 seconds
 
 ========================================
-TIMING RESULTS (No-HDD version):
+TIMING RESULTS (HDD-based version):
 ========================================
-Total HDD time: 0 seconds
-Total Building time: 0.524004 seconds
-Total Merge time: 21.5705 seconds
-Total ANNS time: 25.0144 seconds
-========================================
-
-Timing results saved to ../results/1000000_k32_s9_NoHDD.txt
-SKIPPED: /home/mrest/multiGPU-ANN/benchmarking-NNDescent-NoHDD/build/nsys-traces/nsys_output_6879451.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.sqlite does not contain NV Tools Extension (NVTX) data.
-Building shards costs: 0.57643
-Update graph costs: 0.010733
-Update graph costs: 0.010757
-Update graph costs: 0.010453
-Update graph costs: 0.009471
-Update graph costs: 0.01041
-Update graph costs: 0.009444
-Update graph costs: 0.010862
-Update graph costs: 0.009419
-Update graph costs: 0.010639
-Update graph costs: 0.009423
-Update graph costs: 0.01089
-Update graph costs: 0.009679
-Update graph costs: 0.009451
-Update graph costs: 0.012521
-No. 0 mergers cost: 5.28425
-No. 0 avg. cost: 0.660532
-
-
-Update graph costs: 0.009466
-Update graph costs: 0.009598
-Update graph costs: 0.009447
-No. 1 mergers cost: 3.9127
-No. 1 avg. cost: 0.558958
-
-
-Update graph costs: 0.009611
-Update graph costs: 0.00969
-Update graph costs: 0.0096
-Update graph costs: 0.009597
-No. 2 mergers cost: 4.22801
-No. 2 avg. cost: 0.704669
-
-
-Update graph costs: 0.009354
-Update graph costs: 0.00935
-Update graph costs: 0.009413
-Update graph costs: 0.009382
-Update graph costs: 0.009348
-Update graph costs: 0.011293
-No. 3 mergers cost: 3.01662
-No. 3 avg. cost: 0.603324
-
-
-Update graph costs: 0.00936
-Update graph costs: 0.009404
-Update graph costs: 0.009504
-No. 4 mergers cost: 2.50927
-No. 4 avg. cost: 0.627317
-
-
-Update graph costs: 0.009663
-Update graph costs: 0.009619
-Update graph costs: 0.009563
-No. 5 mergers cost: 1.70197
-No. 5 avg. cost: 0.567325
-
-
-Update graph costs: 0.009401
-Update graph costs: 0.011264
-No. 6 mergers cost: 1.20196
-No. 6 avg. cost: 0.600978
-
-
-Update graph costs: 0.00967
-No. 7 mergers cost: 0.658576
-No. 7 avg. cost: 0.658576
-
-
-1000000 32
-Total time cost: 26.0849 seconds
-
-========================================
-TIMING RESULTS (No-HDD version):
-========================================
-Total HDD time: 0 seconds
-Total Building time: 0.57643 seconds
-Total Merge time: 22.5943 seconds
-Total ANNS time: 26.0849 seconds
+Total Building time: 10.0474 seconds
+  - HDD Read (Building): 0 seconds
+  - HDD Write (Building): 3.3538 seconds
+Total Merge time: 100.917 seconds
+  - HDD Read (Merging - naive sum): 0.468316 seconds
+  - HDD Write (Merging - naive sum): 2.15682 seconds
+  - HDD Read (Merging - actual with overlap): 3.83759 seconds
+  - HDD Write (Merging - actual with overlap): 16.5254 seconds
+Total ANNS time: 114.497 seconds
 ========================================
 
-Timing results saved to ../results/1000000_k32_s9_NoHDD.txt
+Timing results saved to ../results/10000000_k32_s6.txt
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/9.0.1"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cray-mpich/9.0.1"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+10000000 32
+10000000 32
+Start writing thread.............
+Start writing thread.............
+Start writing thread.............
+End writing thread 0 ..............2.2519
+End writing thread 1 ..............2.21348
+End writing thread 2 ..............2.16604
+Start writing thread.............
+Start writing thread.............
+Start writing thread.............
+End writing thread 3 ..............2.23355
+End writing thread 4 ..............2.23356
+End writing thread 5 ..............2.24987
+Start writing thread.............
+Start writing thread.............
+Start writing thread.............
+End writing thread 7 ..............2.1919
+End writing thread 8 ..............2.25087
+End writing thread 6 ..............2.25732
+Building shards costs: 10.3568
+Update graph costs: 0.237976
+Update graph costs: 0.236559
+Update graph costs: 0.23611
+Update graph costs: 0.227959
+Update graph costs: 0.274209
+Update graph costs: 0.224759
+Update graph costs: 0.23821
+Update graph costs: 0.224799
+Update graph costs: 0.23627
+Update graph costs: 0.214392
+Update graph costs: 0.253247
+Update graph costs: 0.236573
+Update graph costs: 0.214919
+Update graph costs: 0.253852
+Update graph costs: 0.237586
+No. 0 mergers cost: 44.8456
+No. 0 avg. cost: 5.6057
+
+
+Update graph costs: 0.231928
+Update graph costs: 0.228245
+Update graph costs: 0.224938
+Update graph costs: 0.242904
+No. 1 mergers cost: 37.5151
+No. 1 avg. cost: 5.3593
+
+
+Update graph costs: 0.214523
+Update graph costs: 0.21399
+No. 2 mergers cost: 32.7982
+No. 2 avg. cost: 5.46636
+
+
+Update graph costs: 0.235981
+Update graph costs: 0.236697
+Update graph costs: 0.235325
+Update graph costs: 0.212136
+Update graph costs: 0.26035
+Update graph costs: 0.211889
+Update graph costs: 0.265454
+No. 3 mergers cost: 28.4196
+No. 3 avg. cost: 5.68392
+
+
+Update graph costs: 0.211136
+Update graph costs: 0.223006
+Update graph costs: 0.244647
+No. 4 mergers cost: 21.9934
+No. 4 avg. cost: 5.49835
+
+
+Update graph costs: 0.215014
+Update graph costs: 0.213948
+No. 5 mergers cost: 17.5012
+No. 5 avg. cost: 5.83373
+
+
+Update graph costs: 0.2354
+Update graph costs: 0.235405
+No. 6 mergers cost: 11.5693
+No. 6 avg. cost: 5.78467
+
+
+Update graph costs: 0.213911
+No. 7 mergers cost: 5.97154
+No. 7 avg. cost: 5.97154
+
+
+
+========================================
+TIMING RESULTS (HDD-based version):
+========================================
+Total Building time: 10.3568 seconds
+  - HDD Read (Building): 0 seconds
+  - HDD Write (Building): 3.36929 seconds
+Total Merge time: 133.916 seconds
+  - HDD Read (Merging - naive sum): 0.466406 seconds
+  - HDD Write (Merging - naive sum): 2.19146 seconds
+  - HDD Read (Merging - actual with overlap): 6.18453 seconds
+  - HDD Write (Merging - actual with overlap): 24.5427 seconds
+Total ANNS time: 147.819 seconds
+========================================
+
+Timing results saved to ../results/10000000_k32_s9.txt
